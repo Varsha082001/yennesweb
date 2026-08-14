@@ -15,7 +15,7 @@
 
   <div class="logo">
     <a href="aboutus.html">
-        <img src="YENNESLogo.jpg" alt="YENNES">
+        <img src="Images/YENNESLogo.jpg" alt="YENNES">
     </a>
 </div>
 
@@ -86,7 +86,6 @@
 </li>
 
     <li><a href="Our Clients.html">Our Clients</a></li>
-
     <li><a href="contact.html">Contact</a></li>
 
 </ul>
@@ -99,258 +98,92 @@
 
 
 <section class="page-banner">
-
-    <div class="banner-bg-text">
-        YENNES
-    </div>
-
+  <img src="Images/YENNESLogo.jpg" class="banner-logo" alt="YENNES Logo">
     <div class="banner-content">
-
         <h1>Contact</h1>
-
         <p>
             Home /
             <span>Contact</span>
         </p>
-
     </div>
-
 </section>
 
-<!-- <section class="contact-section">
-
-    <div class="contact-heading">
-
-        <span>STAY CONNECTED</span>
-
-        <h2>Contact Us</h2>
-
-        <p>
-            We'd love to hear from you. Reach out to us for product enquiries,
-            support or any business requirements.
-        </p>
-
-    </div>
-
-    <div class="contact-container">
-
-        <div class="contact-info">
-
-            <div class="info-box">
-
-                <div class="icon">📍</div>
-
-                <div>
-
-                    <h3>Head Office</h3>
-
-                    <p>
-                        Office No.1, 2nd Floor, Gokul Arcade,
-                        No.2, Sardar Patel Road,
-                        Adyar, Chennai - 600020.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="info-box">
-
-                <div class="icon">📧</div>
-
-                <div>
-
-                    <h3>Email</h3>
-
-                    <p>info@yennes.com</p>
-
-                </div>
-
-            </div>
-
-            <div class="info-box">
-
-                <div class="icon">📞</div>
-
-                <div>
-
-                    <h3>Phone</h3>
-
-                    <p>
-                        +044 - 43931111 <br>
-                        +91 9940401111
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div> -->
-
-        <!-- Contact Form -->
-
-        <!-- <div class="contact-form">
-
-            <h3>For Queries Reach Us</h3>
-
-            <form id="contactForm">
-
-                <input
-                    type="text"
-                    id="name"
-                    placeholder="Your Name *"
-                    required>
-
-                <input
-                    type="email"
-                    id="email"
-                    placeholder="Your Email *"
-                    required>
-
-                <input
-                    type="text"
-                    id="subject"
-                    placeholder="What's this about?"
-                    required>
-
-                <textarea
-                    id="message"
-                    rows="6"
-                    placeholder="Your Query *"
-                    required></textarea>
-
-                <button type="submit">
-                    Submit
-                </button>
-
-                <p id="status"></p>
-
-            </form>
-
-        </div>
-
-    </div>
-
-</section> -->
 
 
 <section class="contact-section">
-
     <div class="contact-heading">
-
         <span>LET'S START A CONVERSATION</span>
-
         <h2>Contact Us</h2>
-
         <p>
             Have a question about TDL Customization, AMC, Add-ons or
             Implementation? We'd love to hear from you.
         </p>
-
     </div>
 
     <!-- Contact Cards -->
-
     <div class="contact-cards">
-
         <div class="contact-card">
-
             <div class="contact-icon">
                 📍
             </div>
-
             <h3>Address</h3>
-
             <p>
                 Office No.1, 2nd Floor,
                 Gokul Arcade,
                 Sardar Patel Road,
-                Adyar, Chennai - 600020
+            Adyar, Chennai - 600020
             </p>
-
         </div>
-
         <div class="contact-card">
-
             <div class="contact-icon">
                 📞
             </div>
-
             <h3>Call Us</h3>
-
             <p>
-
                 +044 - 43931111
-
                 <br>
-
                 +91 9940401111
-
             </p>
-
         </div>
-
         <div class="contact-card">
-
             <div class="contact-icon">
                 ✉
-
             </div>
-
             <h3>Email</h3>
-
             <p>
-
                 info@yennes.com
-
             </p>
-
         </div>
 
         <div class="contact-card">
-
             <div class="contact-icon">
                 🕒
             </div>
-
             <h3>Working Hours</h3>
-
             <p>
-
                 Monday - Saturday
-
                 <br>
-
                 9:15 AM - 6:00 PM
-
             </p>
-
         </div>
-
     </div>
 
     <!-- Contact Form -->
 
     <div class="message-box">
-
         <h2>For Enqueries</h2>
-
         <form id="contactForm">
-
             <div class="form-row">
-
                 <input
                 type="text"
                 id="name"
                 placeholder="Your Name"
                 required>
-
                 <input
                 type="email"
                 id="email"
                 placeholder="Your Email"
                 required>
-
             </div>
 
             <input
@@ -358,57 +191,215 @@
             id="subject"
             placeholder="Subject"
             required>
-
             <textarea
             id="message"
             rows="7"
             placeholder="Your Message"
             required></textarea>
-
             <button type="submit">
-
                 Send Message
-
             </button>
-
             <p id="status"></p>
-
         </form>
-
     </div>
 
+
+<!-- ================= BRANCHES ================= -->
+
+
+<section class="locations-section">
+
+    <h2 class="location-title">Our Locations</h2>
+
+    <!-- Branch Tabs -->
+    <div class="location-tabs">
+        <button class="tab-btn active" onclick="showBranch(event,'chennai')">Chennai</button>
+        <button class="tab-btn" onclick="showBranch(event,'madurai')">Madurai</button>
+        <button class="tab-btn" onclick="showBranch(event,'puducherry')">Puducherry</button>
+        <button class="tab-btn" onclick="showBranch(event,'salem')">Salem</button>
+        <button class="tab-btn" onclick="showBranch(event,'trichy')">Trichy</button>
+        <button class="tab-btn" onclick="showBranch(event,'tirunelveli')">Tirunelveli</button>
+        <button class="tab-btn" onclick="showBranch(event,'coimbatore')">Coimbatore</button>
+        <button class="tab-btn" onclick="showBranch(event,'tiruppur')">Tiruppur</button>
+    </div>
+
+    <!-- Chennai -->
+    <div id="chennai" class="branch-content active">
+        <div class="branch-details">
+            <h3>Chennai (Registered Office)</h3>
+            <p>
+                Office No.1, 2nd Floor, Gokul Arcade,<br>
+                No.2, Sardar Patel Road,<br>
+                Adyar, Chennai - 600020
+            </p>
+
+            <a href="https://maps.google.com/?q=Yennes+Infotec+Pvt+Ltd+Adyar+Chennai"
+               target="_blank"
+               class="map-btn">
+               Open in Maps
+            </a>
+        </div>
+
+        <iframe
+            src="https://www.google.com/maps?q=Yennes+Infotec+Pvt+Ltd+Adyar+Chennai&output=embed"
+            loading="lazy">
+        </iframe>
+    </div>
+
+
+    <!-- Madurai -->
+    <div id="madurai" class="branch-content">
+        <div class="branch-details">
+            <h3>Madurai</h3>
+            <p>YENNES Infotec (P) Limited
+                No.6, Sarvodhaya 4th Street, New Ellis Nagar 
+                70th Feet Road, Madurai - 625016, Tamil Nadu</p>
+
+            <a href="https://www.google.com/search?q=Madurai+yennes&rlz=1C1KXLH_enIN1225IN1225&oq=Madurai+yennes+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRiPAjIHCAIQIRiPAtIBCDk3OTdqMGo3qAIIsAIB8QV_L6Rd8uYa4Q&sourceid=chrome&source=chrome.ob&ie=UTF-8#sv=CAwS2gEKBmxjbF9wdhIuCgNwdnESJ0NnMHZaeTh4TVdKMFgyZzVlblJySWd3S0JubGxibTVsY3hBQ0dBTRJjCgNscWkSXENnNU5ZV1IxY21GcElIbGxibTVsYzBpeDl0UDM1NnFBZ0FoYUZoQUJHQUFZQVNJT2JXRmtkWEpoYVNCNVpXNXVaWE9TQVJCemIyWjBkMkZ5WlY5amIyMXdZVzU1EhIKA3RicxILbHJmOiEzc0lBRT0SEwoBcRIOTWFkdXJhaSB5ZW5uZXMaEmxvY2FsLXBsYWNlLXZpZXdlchgKIJCBoboI"
+               target="_blank"
+               class="map-btn">
+               Open in Maps
+            </a>
+        </div>
+
+        <iframe
+            src="https://www.google.com/maps?q=Madurai&output=embed">
+        </iframe>
+    </div>
+
+
+    <!-- Puducherry -->
+    <div id="puducherry" class="branch-content">
+        <div class="branch-details">
+            <h3>Puducherry</h3>
+            <p>No 21 D, Rodiar Mill Street, Mudaliarpet, Puducherry – 605004
+                Tel : 0413 – 2211161,
+                Mobile : +91 9840886813.
+                Email : pondy@yennes.com</p>
+
+            <a href="https://maps.google.com/?q=Puducherry"
+               target="_blank"
+               class="map-btn">
+               Open in Maps
+            </a>
+        </div>
+
+        <iframe
+            src="https://www.google.com/maps?q=Puducherry&output=embed">
+        </iframe>
+    </div>
+
+
+
+    <!-- Salem -->
+    <div id="salem" class="branch-content">
+        <div class="branch-details">
+            <h3>Salem</h3>
+            <p>No. 58, Ramakrishna Road,  Salem – 636007.
+                Tel : 0427 – 4036266,
+                Mobile : +91 9840337536.
+                Email : salem@yennes.com</p>
+
+            <a href="https://maps.google.com/?q=Salem"
+               target="_blank"
+               class="map-btn">
+               Open in Maps
+            </a>
+        </div>
+
+        <iframe
+            src="https://www.google.com/maps?q=Salem&output=embed">
+        </iframe>
+    </div>
+
+
+<!-- Trichy -->
+    <div id="trichy" class="branch-content">
+        <div class="branch-details">
+            <h3>Trichy</h3>
+            <p>A-2, 1st Floor, No.9,
+                NBA Towers,11th “C” Cross West,
+                Thillai Nagar, Trichy – 620018.
+                Tel : 0431 – 4971133,
+                Mobile : +91 96000 45004.
+                Email : trichy@yennes.com</p>
+            <a href="https://maps.google.com/?q=Trichy"
+               target="_blank"
+               class="map-btn">
+               Open in Maps
+            </a>
+        </div>
+        <iframe
+            src="https://www.google.com/maps?q=Trichy&output=embed">
+        </iframe>
+    </div>
+
+
+    <!-- Thirunelveli -->
+    <div id="tirunelveli" class="branch-content">
+        <div class="branch-details">
+            <h3>Thirunelveli</h3>
+            <p>No.1/10, II nd Floor, KS Arcade, Bye Pass Road – 
+                East, Barani Nagar, 
+                Vannarpettai, Tirunelveli – 627009.
+                Tel : 0462 – 2502242,
+                Mobile : +91 – 9600007242 & 7397451234.
+                Email : tirunelveli@yennes.com</p>
+            <a href="https://maps.google.com/?q=Thirunelveli"
+               target="_blank"
+               class="map-btn">
+               Open in Maps
+            </a>
+        </div>
+        <iframe
+            src="https://www.google.com/maps?q=Thirunelveli&output=embed">
+        </iframe>
+    </div>
+
+
+<!-- Coimbatore -->
+    <div id="coimbatore" class="branch-content">
+        <div class="branch-details">
+            <h3>Coimbatore</h3>
+            <p>H, 1st Floor, No.343,S.V.P.COMPLEX,
+                Avarampalayam Road, Sidhapudur,
+                Coimbatore – 641 044.
+                Tel : 0422 – 4206555, 4204222.
+                Mobile : + 91 – 9500872444, 9944960841.
+                Email : coimbatore@yennes.com</p>
+            <a href="https://maps.google.com/?q=Coimbatore"
+               target="_blank"
+               class="map-btn">
+               Open in Maps
+            </a>
+        </div>
+        <iframe
+            src="https://www.google.com/maps?q=Coimbatore&output=embed">
+        </iframe>
+    </div>
+
+
+<!-- Tiruppur -->
+    <div id="tiruppur" class="branch-content">
+        <div class="branch-details">
+            <h3>Tiruppur</h3>
+            <p>2nd Floor, 22, Govindarajulu Street, K.N.P. Puram, 
+                Behind Saravana Bhavan Hotel,
+                Avinasi Road, Tiruppur – 641602.
+                Mobile : +91 – 9944960834.
+                Email : coimbatore@yennes.com</p>
+            <a href="https://maps.google.com/?q=Tiruppur"
+               target="_blank"
+               class="map-btn">
+               Open in Maps
+            </a>
+        </div>
+        <iframe
+            src="https://www.google.com/maps?q=Tiruppur&output=embed">
+        </iframe>
+    </div>
 </section>
-
-
-
-<!-- EmailJS -->
-
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-<script src="contact.js"></script>
-
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</section> 
 
 
 
@@ -467,5 +458,9 @@
             © 2025 YENNES TDL | All Rights Reserved
         </p>
     </div>
+    <!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="location.js"></script>
+
 </body>
 </html>

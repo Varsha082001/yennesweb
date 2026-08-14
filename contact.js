@@ -1,5 +1,5 @@
 emailjs.init({
-    publicKey: "t8ux-6ETSNUvbQvQ4",
+    publicKey: "VfYYxHS3n2o_GWKDv"
 });
 document.getElementById("contactForm").addEventListener("submit", function (e) {
     e.preventDefault();
@@ -25,46 +25,6 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     });
 });
 
-
-console.log("Contact JS Loaded");
-(function () {
-    emailjs.init({
-        publicKey: "MEpvQomj9q0oxkVGx"
-    });
-    const form = document.getElementById("demoForm");
-    console.log("Form Found:", form);
-    form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        const params = {
-            from_name: document.getElementById("name").value,
-            company: document.getElementById("company").value,
-            from_email: document.getElementById("email").value,
-            mobile: document.getElementById("mobile").value,
-            city: document.getElementById("city").value,
-            product: document.getElementById("product").value,
-            demo_date: document.getElementById("date").value,
-            demo_time: document.getElementById("time").value,
-            message: document.getElementById("message").value
-        };
-        console.log(params);
-        emailjs.send(
-            "service_ifz9maq",
-            "template_i65ch3l",
-            params
-        )
-        .then(function(response){
-            console.log("SUCCESS", response);
-            document.getElementById("status").innerHTML =
-            "Demo Request Sent Successfully";
-            form.reset();
-        })
-        .catch(function(error){
-            console.log("FULL ERROR");
-            console.log(error);
-            alert(JSON.stringify(error));
-        });
-    });
-})();
 
 
 
@@ -110,10 +70,6 @@ window.onload = function () {
 };
 
 
-
-
-
-
 function openPopup(image){
     document.getElementById("popup").style.display="flex";
     document.getElementById("popupImage").src=image;
@@ -123,6 +79,8 @@ function closePopup(){
     document.getElementById("popup").style.display="none";
 }
  
+
+
 
 window.onclick=function(event){
     let popup=document.getElementById("popup");
@@ -151,6 +109,19 @@ document.getElementById("imagePopup").addEventListener("click",function(e){
 
 
 
+// function showBranch(branchId){
 
+//     document.querySelectorAll(".branch-content").forEach(function(item){
+//         item.classList.remove("active");
+//     });
+
+//     document.querySelectorAll(".tab-btn").forEach(function(btn){
+//         btn.classList.remove("active");
+//     });
+
+//     document.getElementById(branchId).classList.add("active");
+
+//     event.target.classList.add("active");
+// }
 
 
