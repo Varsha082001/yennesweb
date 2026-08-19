@@ -104,24 +104,3 @@ document.getElementById("imagePopup").addEventListener("click",function(e){
         closeImage();
     }
 });
-
-
-
-
-
-// function showBranch(branchId){
-
-//     document.querySelectorAll(".branch-content").forEach(function(item){
-//         item.classList.remove("active");
-//     });
-
-//     document.querySelectorAll(".tab-btn").forEach(function(btn){
-//         btn.classList.remove("active");
-//     });
-
-//     document.getElementById(branchId).classList.add("active");
-
-//     event.target.classList.add("active");
-// }
-
-

@@ -8,7 +8,6 @@ body{
     overflow-x:auto;
 }
 
-
 *{
     margin:0;
     padding:0;
@@ -27,7 +26,6 @@ body{
     padding:0 20px;
 }
 
-
 /* NAVBAR */
 .navbar{
     width:100%;
@@ -42,12 +40,6 @@ body{
     top:0;
     z-index:9999;
 }
-
-/* LOGO */
-/* .logo img{
-    height:80px;
-    cursor:pointer;
-} */
 
 .logo a{
     display:inline-block;
@@ -190,52 +182,6 @@ body{
         font-size:20px;
     }
 }
-/* ================================================================================== */
-/* .page-banner{
-    position:relative;
-    height:250px;
-    background:#f3f3f3;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    overflow:hidden;
-} */
-
-/* Background Text */
-
-/* .banner-bg-text{
-    position:absolute;
-    font-size:180px;
-    font-weight:700;
-    color:rgba(255,255,255,0.7);
-    white-space:nowrap;
-    user-select:none;
-   
-} */
-
-/* Content */
-
-/* .banner-content{
-    position:relative;
-    text-align:center;
-    z-index:2;
-}
-
-.banner-content h1{
-    font-size:48px;
-    color:#1e3e94;
-    margin-bottom:15px;
-}
-
-.banner-content p{
-    font-size:18px;
-    color:#030202;
-}
-
-.banner-content span{
-    color:#b9b9b9;
-    font-weight:600;
-} */
 
 
 /*==========================
@@ -288,34 +234,6 @@ PAGE BANNER
     font-weight:600;
 }
 
-
-
-
-/* ======================================================================================= */
-
-/* .trusted-partner{
-    max-width:700px;
-    margin:80px auto;
-    padding:0 20px;
-    text-align:left;
-    margin-left: 50px;
-}
-
-.trusted-partner h2{
-    font-size:35px;
-    color:#1e3e94;
-    margin-bottom:25px;
-    font-weight:700;
-    text-align:left;
-}
-
-.trusted-partner p{
-    font-size:18px;
-    line-height:1.8;
-    color:#555;
-    margin-bottom:20px;
-    text-align:left;
-} */
 /* ========================================================================================== */
 
 .about-highlight{
@@ -982,17 +900,6 @@ body{
     display:block;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* ========================= */
 /* BOARD MEMBER */
 /* ========================= */
@@ -1010,422 +917,247 @@ body{
     display:flex;
     align-items:center;
     gap:40px;
-
     background:#fff;
-
     border-radius:25px;
-
     padding:30px;
-
     box-shadow:0 15px 40px rgba(0,0,0,.08);
-
     transition:.4s;
-
 }
 
 .member-card:hover{
-
     transform:translateY(-8px);
-
     box-shadow:0 20px 50px rgba(16,156,216,.18);
-
 }
 
 .member-image{
-
     width:360px;
-
     flex-shrink:0;
-
 }
 
 .member-image img{
-
     width:100%;
-
     height:450px;
-
     object-fit:cover;
-
     border-radius:20px;
-
 }
 
 .member-content{
-
     flex:1;
-
 }
 
 .member-tag{
-
     color:#109cd8;
-
     font-size:14px;
-
     letter-spacing:3px;
-
     text-transform:uppercase;
-
     font-weight:bold;
-
 }
 
 .member-content h2{
-
     font-size:40px;
-
     color:#1e3e94;
-
     margin-top:15px;
-
 }
 
 .member-content h4{
-
     font-size:22px;
-
     color:#666;
-
     margin:8px 0 25px;
-
     font-weight:500;
-
 }
 
 .member-content p{
-
     color:#555;
-
     line-height:2;
-
     font-size:17px;
-
     text-align:justify;
-
 }
 
 .member-footer{
-
     margin-top:40px;
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
 }
 
 .email-box{
-
     display:flex;
-
     align-items:center;
-
     gap:12px;
-
     font-size:17px;
-
     color:#555;
-
 }
 
 .email-icon{
-
     width:45px;
-
     height:45px;
-
     border-radius:50%;
-
     background:#eef7ff;
-
     color:#109cd8;
-
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
     font-size:20px;
-
 }
 
 .profile-btn{
-
     background:#1b1b1b;
-
     color:#fff;
-
     text-decoration:none;
-
     padding:15px 35px;
-
     border-radius:50px;
-
     font-size:16px;
-
     transition:.3s;
-
 }
 
 .profile-btn:hover{
-
     background:#109cd8;
-
 }
 
 @media(max-width:992px){
-
 .member-card{
-
     flex-direction:column;
-
 }
 
 .member-image{
-
     width:100%;
-
 }
 
 .member-image img{
-
     height:auto;
-
 }
 
 .member-footer{
-
     flex-direction:column;
-
     gap:25px;
-
     align-items:flex-start;
-
 }
-
 }
-
-
-
-
-
-
 
 /* ===================== PARTNER SECTION ====================== */
 
 .partner-section{
-
     width:90%;
     max-width:1300px;
-
     margin:100px auto;
-
 }
 
 .partner-title{
-
     text-align:center;
-
     margin-bottom:60px;
-
 }
 
 .partner-title span{
-
     color:#109cd8;
-
     letter-spacing:3px;
-
     font-weight:bold;
-
 }
 
 .partner-title h2{
-
     font-size:45px;
-
     color:#1e3e94;
-
     margin:15px 0;
-
 }
-
 .partner-title p{
-
     max-width:750px;
-
     margin:auto;
-
     color:#666;
-
     line-height:1.8;
-
 }
-
 .partner-container{
-
     display:grid;
-
     grid-template-columns:2fr 1fr;
-
     gap:40px;
-
 }
 
 .partner-card{
-
     display:flex;
-
     gap:25px;
-
     padding:30px;
-
     margin-bottom:25px;
-
     border-radius:20px;
-
     background:#fff;
-
     box-shadow:0 10px 30px rgba(0,0,0,.08);
-
     transition:.4s;
-
 }
 
 .partner-card:hover{
-
     transform:translateY(-6px);
-
 }
 
 .icon{
-
     width:70px;
-
     height:70px;
-
     border-radius:50%;
-
     background:#109cd8;
-
     color:white;
-
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
     font-size:30px;
-
 }
 
 .partner-card h3{
-
     color:#1e3e94;
-
     margin-bottom:12px;
-
 }
 
 .partner-card p{
-
     color:#555;
-
     line-height:1.8;
-
 }
 
 .partner-right{
-
     display:flex;
-
     flex-direction:column;
-
     gap:30px;
-
 }
 
 .experience-box{
-
     background:linear-gradient(135deg,#1e3e94,#109cd8);
-
     color:#fff;
-
     padding:50px;
-
     border-radius:20px;
-
     text-align:center;
-
 }
 
 .experience-box h2{
-
     font-size:60px;
-
 }
 
 .branches-box{
-
     background:#f7f9ff;
-
     padding:30px;
-
     border-radius:20px;
-
     box-shadow:0 10px 30px rgba(0,0,0,.08);
-
 }
 
 .branches-box h3{
-
     color:#1e3e94;
-
     margin-bottom:20px;
-
 }
 
 .branch-list{
-
     display:grid;
-
     grid-template-columns:1fr 1fr;
-
     gap:15px;
-
 }
 
 .branch-list span{
-
     background:white;
-
     padding:12px;
-
     border-radius:10px;
-
     font-weight:600;
-
 }
 
 @media(max-width:991px){
-
 .partner-container{
-
     grid-template-columns:1fr;
-
 }
 
 .partner-title h2{
-
     font-size:35px;
-
 }
-
 }
 
 
@@ -5868,553 +5600,490 @@ font-size:34px;
 }
 
 }
-
-
-
-/*==============================
-OUR VERTICAL SOLUTIONS
-==============================*/
-
-/* .vertical-services{
-    padding:70px 8% 30px;
-    background:#f8fafc;
-}
-
-.section-title{
-    text-align:center;
-    max-width:800px;
-    margin:0 auto 30px;
-}
-
-.section-title span{
-
-    color:#1e3e94;
-
-    font-weight:600;
-
-    letter-spacing:2px;
-
-}
-
-.section-title h2{
-
-    font-size:42px;
-
-    margin:15px 0;
-
-}
-
-.section-title p{
-
-    font-size:18px;
-
-    color:#666;
-
-    line-height:32px;
-
-}
-
-.vertical-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-    margin-bottom:0;
-}
-
-
-.vertical-card{
-    background:#fff;
-    padding:35px 30px;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-    transition:.35s;
-    border-top:4px solid transparent;
-}
-
-.vertical-card:hover{
-    transform:translateY(-10px);
-    border-top:4px solid #1e3e94;
-    box-shadow:0 20px 40px rgba(0,0,0,.12);
-}
-
-.vertical-card .icon{
-    font-size:55px;
-    margin-bottom:20px;
-}
-
-.vertical-card h3{
-    font-size:24px;
-    margin-bottom:15px;
-    color:#222;
-}
-
-.vertical-card p{
-    color:#666;
-    line-height:30px;
-    font-size:16px;
-} */
-
-/* Responsive */
-
-/* @media(max-width:992px){
-.vertical-grid{
-grid-template-columns:repeat(2,1fr);
-}
-}
-
-@media(max-width:768px){
-.vertical-grid{
-grid-template-columns:1fr;
-}
-.section-title h2{
-font-size:34px;
-}
-}
- */
-
-
-/* .accordion-section{
-    width:80%;
-    margin:70px auto;
-}
-
-.accordion-section h2{
-    text-align:center;
-    font-size:40px;
-    color:#0f2347;
-    margin-bottom:40px;
-}
-
-.accordion-btn{
-
-    width:100%;
-    background:#0f2347;
-    color:#fff;
-
-    border:none;
-
-    padding:20px;
-
-    text-align:left;
-
-    font-size:22px;
-
-    cursor:pointer;
-
-    margin-top:15px;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    border-radius:8px;
-
-    transition:.3s;
-
-}
-
-.accordion-btn:hover{
-
-    background:#1d4ed8;
-
-}
-
-.accordion-content{
-
-    background:#f4f7fb;
-
-    display:none;
-
-    padding:20px;
-
-    border-radius:0 0 8px 8px;
-
-    line-height:2;
-
-    font-size:18px;
-
-}
-
-.accordion-btn.active{
-
-    background:#38bdf8;
-
-}
-
-.accordion-btn.active span{
-
-    transform:rotate(45deg); */
-
-/* } */
-
-/* =========================
-   MANUFACTURING ACCORDION
-========================= */
+/* ========================================================================================================= */
+/* =====================================================
+   ACCORDION SECTION
+===================================================== */
 
 .accordion-section {
     width: 90%;
-    max-width: 1100px;
-    margin: 60px auto;
+    max-width: 1200px;
+    margin: 50px auto;
 }
+
+
+/* =====================================================
+   ACCORDION
+===================================================== */
 
 .accordion {
     width: 100%;
 }
 
-/* Main Manufacturing Button */
+
+/* =====================================================
+   ACCORDION BUTTON
+===================================================== */
 
 .accordion-btn {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    min-height: 65px;
 
-    padding: 20px 25px;
+    padding: 18px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     background: #ffffff;
+
+    border: 1px solid #dfe5ec;
+
     color: #1e3e94;
 
-    border: 1px solid #ddd;
-    border-radius: 10px;
-
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 600;
 
     cursor: pointer;
-    transition: 0.3s;
+
+    box-sizing: border-box;
+
+    border-radius: 10px;
+
+    transition: all 0.3s ease;
+
+    margin-bottom: 10px;
 }
+
+
+/* =====================================================
+   ACCORDION TITLE
+===================================================== */
+
+.accordion-title {
+    display: flex;
+    align-items: center;
+
+    color: #1e3e94;
+
+    font-size: 19px;
+    font-weight: 600;
+
+    text-align: left;
+}
+
+
+/* =====================================================
+   ACCORDION ICON
+===================================================== */
+
+.accordion-icon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+
+    flex-shrink: 0;
+
+    color: #1e3e94;
+
+    font-size: 27px;
+
+    font-weight: 400;
+
+    line-height: 1;
+}
+
+
+/* =====================================================
+   HOVER
+===================================================== */
 
 .accordion-btn:hover {
-    background: #f4f9ff;
+    background: #f7faff;
+
+    border-color: #109cd8;
 }
 
-.accordion-btn span {
-    font-size: 25px;
-    color: #109cd8;
+
+/* =====================================================
+   ACTIVE BUTTON
+===================================================== */
+
+.accordion-btn.active {
+    background: #f7faff;
+
+    border-color: #109cd8;
+
+    border-radius: 10px 10px 0 0;
+
+    margin-bottom: 0;
 }
 
-/* Main Content */
+
+/* =====================================================
+   ACCORDION CONTENT
+===================================================== */
 
 .accordion-content {
+
     display: none;
+
+    width: 100%;
 
     padding: 35px;
 
     background: #ffffff;
 
-    border: 1px solid #ddd;
+    border: 1px solid #dfe5ec;
+
     border-top: none;
 
+    box-sizing: border-box;
+
     line-height: 1.8;
+
+    color: #555;
+
+    border-radius: 0 0 10px 10px;
+
 }
 
-/* When opened */
 
-.accordion-content.show {
-    display: block;
-}
-
-/* Headings inside Manufacturing */
+/* =====================================================
+   CONTENT HEADINGS
+===================================================== */
 
 .accordion-content h3 {
+
     color: #1e3e94;
+
     font-size: 24px;
 
     margin-top: 30px;
+
     margin-bottom: 15px;
+
 }
+
 
 .accordion-content h3:first-child {
+
     margin-top: 0;
+
 }
+
+
+/* =====================================================
+   CONTENT PARAGRAPHS
+===================================================== */
 
 .accordion-content p {
+
     color: #666;
-    margin-bottom: 20px;
+
+    margin: 0 0 20px;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
 }
 
-/* Manufacturing Processes */
 
-.manufacturing-item {
-    padding: 18px 20px;
-    margin-bottom: 15px;
+/* =====================================================
+   PROCESS GRID
+===================================================== */
+
+.process-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+
+    margin-top: 20px;
+
+}
+
+
+/* =====================================================
+   PROCESS ITEM
+===================================================== */
+
+.process-item {
+
+    width: 100%;
+
+    padding: 20px;
 
     background: #f7faff;
 
     border-left: 4px solid #109cd8;
-    border-radius: 6px;
+
+    border-radius: 8px;
+
+    box-sizing: border-box;
+
+    transition: 0.3s ease;
+
 }
 
-.manufacturing-item h4 {
+
+.process-item:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.process-item h4 {
+
     color: #1e3e94;
+
     margin: 0 0 8px;
+
     font-size: 18px;
+
+    line-height: 1.4;
+
 }
 
-.manufacturing-item p {
+
+.process-item p {
+
     margin: 0;
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
 }
 
 
-/* =========================
-   VERTICAL SOLUTIONS
-========================= */
+/* =====================================================
+   VERTICAL GRID
+===================================================== */
 
 .vertical-grid {
+
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
 
     gap: 20px;
 
     margin-top: 20px;
+
 }
 
+
+/* =====================================================
+   VERTICAL ITEM
+===================================================== */
+
 .vertical-item {
+
+    width: 100%;
+
     padding: 22px;
 
     background: #f7faff;
 
-    border-radius: 10px;
-
     border: 1px solid #e5eaf2;
 
-    transition: 0.3s;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+
+    transition: 0.3s ease;
+
 }
+
 
 .vertical-item:hover {
+
     transform: translateY(-4px);
 
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.08);
+
 }
+
 
 .vertical-item h4 {
+
     color: #1e3e94;
 
-    margin-top: 0;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
 
     font-size: 18px;
+
+    line-height: 1.4;
+
 }
+
 
 .vertical-item p {
+
     margin: 0;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
 }
 
 
-/* =========================
+/* =====================================================
    BUSINESS BENEFITS
-========================= */
+===================================================== */
 
 .benefits-grid {
+
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
 
     gap: 20px;
 
     margin-top: 20px;
+
 }
 
+
+/* =====================================================
+   BENEFIT ITEM
+===================================================== */
+
 .benefit-item {
+
+    width: 100%;
+
     padding: 22px;
 
     background: #ffffff;
 
-    border-radius: 10px;
-
     border: 1px solid #e2e6ed;
 
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-radius: 10px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.05);
+
 }
+
 
 .benefit-item h4 {
+
     color: #1e3e94;
 
-    margin-top: 0;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
 
     font-size: 18px;
+
+    line-height: 1.4;
+
 }
+
 
 .benefit-item p {
+
     margin: 0;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
 }
 
 
-/* =========================
+/* =====================================================
    MOBILE
-========================= */
+===================================================== */
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
 
     .accordion-section {
+
         width: 92%;
+
+        margin: 40px auto;
+
     }
+
 
     .accordion-btn {
+
+        min-height: 58px;
+
+        padding: 16px 18px;
+
         font-size: 17px;
-        padding: 17px;
+
     }
+
+
+    .accordion-title {
+
+        font-size: 17px;
+
+    }
+
+
+    .accordion-icon {
+
+        font-size: 24px;
+
+        width: 28px;
+
+        height: 28px;
+
+        margin-left: 12px;
+
+    }
+
 
     .accordion-content {
-        padding: 22px;
+
+        padding: 22px 18px;
+
     }
 
-    .vertical-grid,
-    .benefits-grid {
-        grid-template-columns: 1fr;
-    }
 
     .accordion-content h3 {
+
         font-size: 21px;
+
+    }
+
+
+    .process-grid,
+    .vertical-grid,
+    .benefits-grid {
+
+        grid-template-columns: 1fr;
+
     }
 
 }
-
-
-
-/*==============================
-INDUSTRY DETAILS
-==============================*/
-
-    /* .industry-details{
-
-        padding:50px 8% 80px;
-        margin-top:0;
-
-        background:#f7f9fc;
-
-    } */
-
-
-
-    .industry-details{
-    padding:40px 8% 80px;
-    background:#f7f9fc;
-    margin-top:0;
-    scroll-margin-top:110px;
-}
-
-.industry-title{
-
-    text-align:center;
-
-    margin-bottom:30px;
-
-}
-
-.industry-title h2{
-
-    font-size:42px;
-    color:#1f4c8c;
-    margin-bottom:8px;
-
-}
-
-.industry-title p{
-
-      color:#777;
-    font-size:20px;
-    margin:0;
-
-}
-
-.industry-wrapper{
-    display:flex;
-    justify-content:space-between;
-    gap:60px;
-    align-items:flex-start;
-}
-
-/* LEFT */
-
-.industry-features{
-    width:35%;
-}
-
-.industry-features h3{
-    color:#1f4c8c;
-    margin-bottom:25px;
-    font-size:28px;
-}
-
-.industry-features ul{
-    padding-left:20px;
-}
-
-.industry-features li{
-    margin-bottom:18px;
-    font-size:18px;
-    color:#333;
-    line-height:28px;
-}
-
-.industry-btn{
-    display:inline-block;
-    margin-top:30px;
-    padding:14px 32px;
-    background: #1e3e94;
-    color:#fff;
-    text-decoration:none;
-    border-radius:40px;
-    transition:.3s;
-    font-weight:600;
-}
-
-.industry-btn:hover{
-    background:#1f4c8c;
-}
-
-/* RIGHT */
-
-.industry-customers{
-    width:65%;
-}
-
-.industry-customers h3{
-    text-align:center;
-    font-size:30px;
-    color:#1f4c8c;
-    margin-bottom:35px;
-}
-
-.customer-grid{
-    display:grid;
-    grid-template-columns:repeat(5,1fr);
-    gap:25px;
-}
-
-.customer-card{
-    background:#fff;
-    border-radius:15px;
-    padding:15px;
-    text-align:center;
-    transition:.3s;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-}
-
-.customer-card:hover{
-    transform:translateY(-8px);
-}
-
-.customer-card img{
-    width:70px;
-    height:70px;
-    object-fit:contain;
-    margin-bottom:10px;
-}
-
-.customer-card p{
-    font-size:14px;
-    line-height:22px;
-}
-
+/* ========================================================================================================= */ */
 /* Responsive */
-
+/* 
 @media(max-width:992px){
 .industry-wrapper{
 flex-direction:column;
@@ -6427,9 +6096,9 @@ width:100%;
 .customer-grid{
 grid-template-columns:repeat(2,1fr);
 }
-}
+} */
 
-@media(max-width:576px){
+/* @media(max-width:576px){
 .customer-grid{
 grid-template-columns:1fr;
 }
@@ -6437,7 +6106,7 @@ grid-template-columns:1fr;
 font-size:32px;
 }
 
-}
+} */
 
 html{
     scroll-behavior:smooth;
@@ -6459,7 +6128,7 @@ html{
 
 section{
     margin:0;
-}
+} */
 
 
 /*==============================
