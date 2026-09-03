@@ -3382,9 +3382,6 @@ padding:30px;
 /* ===========================
    OUR LOCATIONS
 =========================== */
-/* ===========================
-   OUR LOCATIONS
-=========================== */
 
 .locations-section{
     width:90%;
@@ -6809,11 +6806,7 @@ EXPLORE MORE BUTTON
 }
 
 
-
-/* ============================================================================================================================== */
-
-
-/*==========================
+/*=========================
 OUR WORK
 ==========================*/
 
@@ -6877,9 +6870,6 @@ OUR WORK
 grid-template-columns:1fr;
 }
 }
-
-
-
 
 /*==========================
 WORK CTA
@@ -6952,7 +6942,6 @@ WORK CTA
 /*==========================
 FEATURED PROJECT
 ==========================*/
-
 .featured-projects{
     padding:90px 8%;
     background:#f8fafc;
@@ -7139,7 +7128,6 @@ grid-template-columns:1fr;
 /*==========================
 PROJECT STATISTICS
 ==========================*/
-
 .project-stats{
     padding:90px 8%;
     background:#1f4c8c;
@@ -7180,7 +7168,6 @@ grid-template-columns:1fr;
 /*==========================
 PROJECT HIGHLIGHTS
 ==========================*/
-
 .project-highlights{
     padding:90px 8%;
     background:#f8fafc;
@@ -7226,7 +7213,6 @@ grid-template-columns:1fr;
 /*==========================
 CALL TO ACTION
 ==========================*/
-
 .work-cta{
     padding:90px 8%;
     background:#1e3e94;
@@ -7268,7 +7254,6 @@ CALL TO ACTION
     background:#109cd8;
     color:white;
 }
-
 
 /* Percentage */
 .project-percent{
@@ -7333,12 +7318,9 @@ CALL TO ACTION
     font-size:14px;
 }
 
-
-
 /*=================================
 PROJECT CTA
 ==================================*/
-
 .project-cta{
     padding:90px 8%;
     background:linear-gradient(135deg,#1f4c8c,#0f2f5a);
@@ -7425,7 +7407,6 @@ PROJECT CTA
 /* ==============================
    IMAGE POPUP
 ============================== */
-
 .image-popup{
     display:none;
     position:fixed;
@@ -7472,12 +7453,9 @@ PROJECT CTA
     }
 }
 
-
-
 /*==========================
 COMPLETED PROJECTS
 ==========================*/
-
 .completed-projects{
     padding:70px 8%;
     background:#f8fafc;
@@ -7580,7 +7558,6 @@ COMPLETED PROJECTS
 }
 
 /* Responsive */
-
 @media(max-width:1100px){
 .completed-grid{
     grid-template-columns:repeat(2,320px);
@@ -7596,8 +7573,6 @@ COMPLETED PROJECTS
     width:100%;
 }
 }
-
-
 
 /*==========================
 COMPLETED PROJECTS
@@ -7714,21 +7689,14 @@ COMPLETED PROJECTS
     gap:8px;
 }
 
-/* .project-status{
-    width:50px;
-    height:50px;
-} */
-
 .project-header h3{
     font-size:22px;
 }
 }
 
-
 /*==========================
 COMPLETED CTA
 ==========================*/
-
 .completed-cta{
     padding:90px 8%;
     background:linear-gradient(135deg,#1f4c8c,#163b6f);
@@ -7810,9 +7778,6 @@ COMPLETED CTA
     line-height:28px;
 }
 }
-
-
-
 
 .success-section{
     padding:90px 8%;
@@ -7918,7 +7883,6 @@ COMPLETED CTA
 
 }
 
-
 /*==========================
 SUCCESS END
 ==========================*/
@@ -8003,12 +7967,9 @@ SUCCESS END
 }
 }
 
-
-
 /* ===========================
    OUR CLIENTS
 =========================== */
-
 .client-section{
     padding:80px 0;
     background:#f8fbff;
@@ -8035,7 +7996,6 @@ SUCCESS END
     margin-bottom:20px;
     font-weight:700;
 }
-
 
 .logo-track{
     display:flex;
@@ -8094,12 +8054,9 @@ SUCCESS END
     }
 }
 
-
-
 /* ===========================
    CLIENT TITLE SECTION
 =========================== */
-
 .client-title{
     background: linear-gradient(135deg,#f8fbff,#eef6ff);
     padding:70px 8%;
@@ -8144,8 +8101,6 @@ SUCCESS END
     line-height:1.9;
     color:#555;
 }
-
-
 
 .client-contact{
     padding:80px 8%;
@@ -8228,8 +8183,6 @@ SUCCESS END
     }
 }
 
-
-
 /*==========================
 ACHIEVEMENT HERO
 ==========================*/
@@ -8280,8 +8233,6 @@ ACHIEVEMENT HERO
 .hero-btn:hover{
     background:white;
 }
-
-
 
 /*==========================
 ACHIEVEMENT STATS
@@ -8367,7 +8318,6 @@ ACHIEVEMENT STATS
     }
 }
 
-
 *{
     margin:0;
     padding:0;
@@ -8386,7 +8336,6 @@ body{
 }
 
 /* Title */
-
 .awards-section{
     padding:80px 0;
 }
@@ -8415,7 +8364,6 @@ body{
 }
 
 /* Grid */
-
 .awards-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -8423,7 +8371,6 @@ body{
 }
 
 /* Card */
-
 .award-card{
     background:#fff;
     border-radius:15px;
@@ -8445,7 +8392,6 @@ body{
 }
 
 /* Popup */
-
 #popup{
     display:none;
     position:fixed;
@@ -8485,7 +8431,6 @@ transform:scale(1);
 }
 
 /* Responsive */
-
 @media(max-width:992px){
 .awards-grid{
 grid-template-columns:repeat(2,1fr);
@@ -8500,9 +8445,6 @@ grid-template-columns:1fr;
 width:90%;
 }
 }
-
-
-
 
 /*==========================
 JOURNEY SECTION
@@ -8598,8 +8540,6 @@ width:100%;
 grid-template-columns:1fr;
 }
 }
-
-
 
 /* ================================================================================== */
 .footer {

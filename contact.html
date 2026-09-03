@@ -14,7 +14,7 @@
 <nav class="navbar">
 
   <div class="logo">
-    <a href="aboutus.html">
+    <a href="index.html">
         <img src="Images/YENNESLogo.jpg" alt="YENNES">
     </a>
 </div>
@@ -26,7 +26,7 @@
     <!-- <li><a href="index.html">Dummy</a></li> -->
 
     <li class="dropdown">
-    <a href="aboutus.html">About us ▼</a>
+    <a href="index.html">About us ▼</a>
 
     <ul class="dropdown-menu">
         <li><a href="company.html">Our Company</a></li>
@@ -212,7 +212,7 @@
     <h2 class="location-title">Our Locations</h2>
 
     <!-- Branch Tabs -->
-    <div class="location-tabs">
+    <!-- <div class="location-tabs">
         <button class="tab-btn active" onclick="showBranch(event,'chennai')">Chennai</button>
         <button class="tab-btn" onclick="showBranch(event,'madurai')">Madurai</button>
         <button class="tab-btn" onclick="showBranch(event,'puducherry')">Puducherry</button>
@@ -221,6 +221,17 @@
         <button class="tab-btn" onclick="showBranch(event,'tirunelveli')">Tirunelveli</button>
         <button class="tab-btn" onclick="showBranch(event,'coimbatore')">Coimbatore</button>
         <button class="tab-btn" onclick="showBranch(event,'tiruppur')">Tiruppur</button>
+    </div> -->
+
+    <div class="location-tabs">
+    <button type="button" class="tab-btn active" onclick="showBranch(event,'chennai')">Chennai</button>
+    <button type="button" class="tab-btn" onclick="showBranch(event,'madurai')">Madurai</button>
+    <button type="button" class="tab-btn" onclick="showBranch(event,'puducherry')">Puducherry</button>
+    <button type="button" class="tab-btn" onclick="showBranch(event,'salem')">Salem</button>
+    <button type="button" class="tab-btn" onclick="showBranch(event,'trichy')">Trichy</button>
+    <button type="button" class="tab-btn" onclick="showBranch(event,'tirunelveli')">Tirunelveli</button>
+    <button type="button" class="tab-btn" onclick="showBranch(event,'coimbatore')">Coimbatore</button>
+    <button type="button" class="tab-btn" onclick="showBranch(event,'tiruppur')">Tiruppur</button>
     </div>
 
     <!-- Chennai -->
@@ -383,7 +394,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2004492.4512118914!2d75.03052149375003!3d11.111565400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba907b021d9178b%3A0xc8c07cfb7c3c661a!2sYENNES%20Infotec%20(P)%20Limited!5e0!3m2!1sen!2sin!4v1787125481349!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
     </div>
 </section>
-</section> 
+
 
 
 
@@ -442,9 +453,37 @@
             © 2025 YENNES TDL | All Rights Reserved
         </p>
     </div>
+
     <!-- EmailJS -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script src="contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="contact.js"></script>
+
+<script>
+function showBranch(event, branchId) {
+
+    event.preventDefault();
+
+    var branches = document.querySelectorAll(".branch-content");
+
+    branches.forEach(function(branch) {
+        branch.classList.remove("active");
+    });
+
+    var buttons = document.querySelectorAll(".tab-btn");
+
+    buttons.forEach(function(button) {
+        button.classList.remove("active");
+    });
+
+    var selectedBranch = document.getElementById(branchId);
+
+    if (selectedBranch) {
+        selectedBranch.classList.add("active");
+    }
+
+    event.currentTarget.classList.add("active");
+}
+</script>
 
 </body>
 </html>
