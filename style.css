@@ -577,7 +577,7 @@ body{
 }
 
 .legal-sidebar a:hover{
-    background:#5b6ca4;
+    background:#00a3ff;
     color:#0f0668;
 }
 
@@ -750,7 +750,7 @@ body{
     height: 140px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #38bdf8;
+    border: 5px solid #1e3e94;
     margin-bottom: 20px;
 }
 
@@ -1279,13 +1279,11 @@ body{
 /* Heading */
 
 .section-title{
-
     text-align:center;
     margin-bottom:60px;
 }
 
 .section-title span{
-
     display:block;
     color:#109cd8;
     font-size:15px;
@@ -1296,14 +1294,12 @@ body{
 }
 
 .section-title h2{
-
     color:#1e3e94;
     font-size:42px;
     margin-bottom:15px;
 }
 
 .section-title p{
-
     max-width:700px;
     margin:0 auto;
     color:#666;
@@ -1314,7 +1310,6 @@ body{
 /* Logo Grid */
 
 .clients-grid{
-
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:50px;
@@ -1336,232 +1331,23 @@ body{
 /* Hover */
 
 .clients-grid img:hover{
-
     transform:scale(1.08);
 }
 
 /* Responsive */
 
 @media(max-width:768px){
-
 .clients-grid{
-
     grid-template-columns:repeat(2,1fr);
     gap:35px;
 }
-
 .section-title h2{
-
-    font-size:32px;
+   font-size:32px;
 }
-
 .clients-grid img{
-
     max-width:140px;
 }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-body{
-
-    background:#f8fbff;
-
-} */
-
-/* SECTION */
-
-/* .guide-section{
-
-    width:90%;
-    max-width:1150px;
-    margin:80px auto;
-
-} */
-
-/* HEADING */
-/* 
-.guide-heading{
-
-    text-align:center;
-    margin-bottom:60px;
-
-}
-
-.guide-heading span{
-
-    color:#109cd8;
-    font-size:15px;
-    font-weight:bold;
-    letter-spacing:3px;
-    text-transform:uppercase;
-
-}
-
-.guide-heading h2{
-
-    font-size:42px;
-    color:#1e3e94;
-    margin:15px 0;
-
-}
-
-.guide-heading p{
-
-    max-width:650px;
-    margin:auto;
-    line-height:1.8;
-    color:#666;
-
-} */
-
-/* CARD */
-
-/* .guide-card{
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    background:#fff;
-
-    padding:25px 30px;
-
-    border-radius:15px;
-
-    margin-bottom:25px;
-
-    border-left:6px solid #109cd8;
-
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
-
-    transition:.3s;
-
-}
-
-.guide-card:hover{
-
-    transform:translateY(-5px);
-
-} */
-
-/* LEFT */
-
-/* .guide-left{
-
-    display:flex;
-    align-items:center;
-    gap:20px;
-
-} */
-
-/* ICON */
-/* 
-.guide-icon{
-
-    width:70px;
-    height:70px;
-
-    border-radius:50%;
-
-    background:#eef8ff;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    font-size:32px;
-
-} */
-
-/* CONTENT */
-/* 
-.guide-content h3{
-
-    color:#1e3e94;
-    margin-bottom:8px;
-
-}
-
-.guide-content p{
-
-    color:#666;
-    line-height:1.7;
-    max-width:650px;
-
-} */
-
-/* BUTTON */
-
-/* .guide-btn{
-
-    text-decoration:none;
-
-    background:#109cd8;
-
-    color:#fff;
-
-    padding:13px 28px;
-
-    border-radius:30px;
-
-    font-weight:bold;
-
-    transition:.3s;
-
-}
-
-.guide-btn:hover{
-
-    background:#1e3e94;
-
-} */
-
-/* RESPONSIVE */
-
-/* @media(max-width:768px){
-
-.guide-card{
-
-    flex-direction:column;
-
-    gap:25px;
-
-    text-align:center;
-
-}
-
-.guide-left{
-
-    flex-direction:column;
-
-}
-
-.guide-content p{
-
-    max-width:100%;
-
-}
-
-} */
-
 
 
 .guide-hero{
@@ -1633,55 +1419,38 @@ body{
 }
 
 .guide-btn{
-
     padding:15px 40px;
-
     background:#1e3e94;
-
     color:#fff;
-
     text-decoration:none;
-
     border-radius:40px;
-
 }
 
-
-
 .quick-start{
-
     padding:90px 8%;
     background:#fff;
-
 }
 
 .steps-grid{
-
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:25px;
-
 }
 
 .step-card{
-
     background:#f8fafc;
     padding:30px;
     border-radius:18px;
     text-align:center;
     transition:.3s;
     box-shadow:0 8px 20px rgba(0,0,0,.08);
-
 }
 
 .step-card:hover{
-
     transform:translateY(-8px);
-
 }
 
 .step-number{
-
     width:60px;
     height:60px;
     margin:auto;
@@ -1694,11 +1463,9 @@ body{
     font-size:22px;
     font-weight:bold;
     margin-bottom:20px;
-
 }
 
 .step-card h3{
-
     color:#1f4c8c;
     margin-bottom:12px;
 
@@ -1800,47 +1567,30 @@ DOWNLOAD MANUALS
 .download-btn{
 
     padding:12px 30px;
-
     background:#ff6b00;
-
     color:#fff;
-
     text-decoration:none;
-
     border-radius:30px;
-
     font-weight:600;
-
     transition:.3s;
-
 }
 
 .download-btn:hover{
-
     background:#1f4c8c;
-
 }
 
 /*==========================
 Responsive
 ==========================*/
-
 @media(max-width:768px){
-
 .manual-card{
-
     flex-direction:column;
-
     text-align:center;
-
     gap:20px;
-
 }
 
 .manual-left{
-
     flex-direction:column;
-
 }
 
 }
@@ -1848,154 +1598,89 @@ html{
     scroll-behavior:smooth;
 }
 
-
-
-
-
 /*=================================
 DOWNLOAD HERO
 ==================================*/
 
 .download-hero{
-
     height:85vh;
-
     background:url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1600") center center/cover no-repeat;
-
     position:relative;
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
     text-align:center;
-
 }
 
 .download-overlay{
-
     position:absolute;
-
     inset:0;
-
     background:rgba(10,35,66,.72);
-
 }
 
 .download-content{
-
     position:relative;
-
     z-index:2;
-
     width:70%;
-
     color:#fff;
-
 }
 
 .download-content span{
-
     display:inline-block;
-
     background:#1e3e94;
-
     padding:8px 22px;
-
     border-radius:30px;
-
     font-size:14px;
-
     letter-spacing:1px;
-
     margin-bottom:20px;
-
     font-weight:600;
-
 }
 
 .download-content h1{
-
     font-size:60px;
-
     margin-bottom:25px;
-
     font-weight:700;
-
 }
 
 .download-content p{
-
     font-size:20px;
-
     line-height:34px;
-
     margin-bottom:40px;
-
     color:#080d3b;
-
 }
 
 .download-hero-btn{
-
     display:inline-block;
-
     padding:16px 40px;
-
     background:#1e3e94;
-
     color:#fff;
-
     text-decoration:none;
-
     border-radius:50px;
-
     font-size:17px;
-
     font-weight:600;
-
     transition:.3s;
-
 }
 
 .download-hero-btn:hover{
-
     background:#fff;
-
     color:#1e3e94;
-
 }
 
 /* Responsive */
-
 @media(max-width:768px){
-
 .download-content{
-
     width:90%;
-
 }
 
 .download-content h1{
-
     font-size:40px;
-
 }
 
 .download-content p{
-
     font-size:17px;
-
     line-height:28px;
-
 }
-
 }
-
-
-
 
 /*==================================
 RESOURCES
@@ -4353,179 +4038,111 @@ margin-bottom:20px;
 }
 
 .hero-content p{
-
 font-size:20px;
-
 line-height:34px;
-
 margin-bottom:35px;
-
 }
 
 .hero-btn{
-
 display:inline-block;
-
 padding:15px 40px;
-
 background:#1e3e94;
-
 color:#fff;
-
 text-decoration:none;
-
 border-radius:50px;
-
 font-weight:600;
-
 transition:.3s;
-
 }
-
 .hero-btn:hover{
-
 background:white;
-
 }
 
 /* ABOUT */
 
 .implementation-about{
-
 display:flex;
-
 align-items:center;
-
 gap:70px;
-
 padding:90px 8%;
-
 background:#fff;
-
 }
 
 .about-image img{
-
 width:520px;
-
 border-radius:20px;
-
 box-shadow:0 15px 40px rgba(0,0,0,.15);
-
 }
 
 .about-content h2{
-
 font-size:42px;
-
 margin-bottom:25px;
-
 }
 
 .about-content p{
-
 font-size:18px;
-
 line-height:34px;
-
 color:#555;
-
 margin-bottom:25px;
-
 }
 
 .about-content ul{
-
 list-style:none;
-
 }
 
 .about-content li{
-
 margin-bottom:14px;
-
 font-size:18px;
-
 }
 
 /* Responsive */
-
 @media(max-width:992px){
-
 .implementation-about{
-
 flex-direction:column;
-
 }
-
 .about-image img{
-
 width:100%;
-
 }
-
 .hero-content{
-
 width:90%;
-
 }
-
 .hero-content h1{
-
 font-size:42px;
-
 }
-
 }
-
-
-
 
 /* ==========================================
                 AMC HERO
 ========================================== */
 
 .amc-hero{
-
     position:relative;
     height:90vh;
-
     background-image:url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600");
     background-size:cover;
     background-position:center;
-
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
-
 }
 
 .hero-overlay{
-
     position:absolute;
     left:0;
     top:0;
-
     width:100%;
     height:100%;
-
     background:rgba(8,27,61,.72);
-
 }
 
 .hero-content{
-
     position:relative;
     z-index:5;
-
     width:70%;
     color:rgb(191, 206, 242);
-
 }
 
 .hero-content h1{
-
     font-size:60px;
     margin-bottom:25px;
     font-weight:700;
@@ -4533,548 +4150,340 @@ font-size:42px;
 }
 
 .hero-content p{
-
     font-size:22px;
     line-height:38px;
     margin-bottom:40px;
-
 }
 
 .hero-btn{
-
     display:inline-block;
-
     padding:16px 42px;
-
     background: #1e3e94;
-
     color:rgb(185, 198, 236);
-
     text-decoration:none;
-
     border-radius:50px;
-
     font-size:18px;
-
     transition:.35s;
-
 }
 
 .hero-btn:hover{
-
     background:rgb(189, 183, 229);
     color: #1e3e94;
-
 }
-
-
 
 /*=========================================
             ABOUT AMC
 =========================================*/
-
 .amc-about{
-
     display:flex;
     align-items:center;
     justify-content:space-between;
     gap:70px;
-
     padding:90px 8%;
-
     background:#ffffff;
-
 }
 
 .about-image{
-
     flex:1;
-
 }
 
 .about-image img{
-
     width:100%;
     border-radius:25px;
-
     box-shadow:0 20px 45px rgba(0,0,0,.15);
-
 }
 
 .about-content{
-
     flex:1.2;
-
 }
 
 .section-tag{
-
     display:inline-block;
-
     background:#c8cff0;
-
     color: #1e3e94;
-
     padding:8px 18px;
-
     border-radius:30px;
-
     font-size:14px;
-
     font-weight:600;
-
     margin-bottom:20px;
-
 }
 
 .about-content h2{
-
     font-size:42px;
-
     margin-bottom:25px;
-
     color:#1b2b52;
-
 }
 
 .about-content p{
-
     font-size:17px;
-
     line-height:32px;
-
     color:#666;
-
     margin-bottom:35px;
-
 }
 
 .about-features{
-
     display:grid;
-
     grid-template-columns:repeat(2,1fr);
-
     gap:20px;
-
 }
 
 .feature-box{
-
     display:flex;
-
     align-items:flex-start;
-
     gap:15px;
-
     padding:20px;
-
     background:#f8fbff;
-
     border-radius:18px;
-
     transition:.3s;
-
     border:1px solid #edf2f7;
-
 }
 
 .feature-box:hover{
-
     transform:translateY(-6px);
-
     box-shadow:0 10px 25px rgba(0,0,0,.08);
-
 }
 
 .icon{
-
     width:55px;
     height:55px;
-
     border-radius:50%;
-
     background: #1e3e94;
-
     color:#fff;
-
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
     font-size:24px;
-
     flex-shrink:0;
-
 }
 
 .feature-box h4{
-
     margin-bottom:8px;
-
     color:#0f2c59;
-
 }
 
 .feature-box p{
-
     margin:0;
-
     font-size:14px;
-
     line-height:24px;
-
     color:#666;
-
 }
 
 /* Responsive */
-
 @media(max-width:991px){
-
 .amc-about{
-
     flex-direction:column;
-
 }
 
 .about-features{
-
     grid-template-columns:1fr;
-
 }
-
 }
-
 
 /*=========================================
         WHY CHOOSE OUR AMC
 =========================================*/
 
 .why-amc{
-
     padding:90px 8%;
     background:#f7f9fc;
-
 }
 
 .section-title{
-
     text-align:center;
     max-width:850px;
     margin:auto;
-
 }
 
 .section-title span{
-
     display:inline-block;
-
     padding:8px 20px;
-
     background:#d7e1ff;
-
     color: #1e3e94;
-
     border-radius:30px;
-
     font-size:14px;
-
     font-weight:600;
-
     margin-bottom:20px;
-
 }
 
 .section-title h2{
-
     font-size:42px;
-
     color:#10284d;
-
     margin-bottom:20px;
-
 }
 
 .section-title p{
-
     font-size:18px;
-
     color:#666;
-
     line-height:32px;
-
     margin-bottom:60px;
-
 }
 
 .why-amc-grid{
-
     display:grid;
-
     grid-template-columns:repeat(4,1fr);
-
     gap:30px;
-
 }
 
 .why-card{
-
     background:#fff;
-
     border-radius:22px;
-
     padding:40px 30px;
-
     text-align:center;
-
     transition:.35s;
-
     box-shadow:0 10px 30px rgba(0,0,0,.08);
-
     border-top:5px solid  #1e3e94;
-
 }
 
 .why-card:hover{
-
     transform:translateY(-10px);
-
     box-shadow:0 18px 40px rgba(0,0,0,.15);
-
 }
 
 .why-icon{
-
-    width:80px;
-
+    width
+    :80px;
     height:80px;
-
     margin:auto;
-
     border-radius:50%;
-
-    background: #1e3e94;
-
+    background: #f9f9fa;
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
     font-size:36px;
-
-    color:#fff;
-
+    color:#080953;
     margin-bottom:25px;
-
 }
 
 .why-card h3{
-
     font-size:22px;
-
     margin-bottom:15px;
+    color:#0d2b5d;      
+}
 
-    color:#0d2b5d;
-
+.why-card h3:hover {
+    /* background: #1e3e94; */
+    color: white;
 }
 
 .why-card p{
-
     color:#666;
-
     line-height:28px;
-
     font-size:15px;
-
 }
 
 /* Responsive */
-
 @media(max-width:1100px){
-
 .why-amc-grid{
-
 grid-template-columns:repeat(2,1fr);
-
 }
 
 }
 
 @media(max-width:768px){
-
 .why-amc-grid{
-
 grid-template-columns:1fr;
-
 }
 
 .section-title h2{
-
 font-size:34px;
-
 }
-
 }
 
 
 /*=========================================
         WHAT'S INCLUDED IN AMC
 =========================================*/
-
 .amc-services{
-
     padding:90px 8%;
     background:#ffffff;
-
 }
 
 .service-grid{
-
     display:grid;
-
     grid-template-columns:repeat(4,1fr);
-
     gap:30px;
-
 }
 
 .service-card{
-
     background:#fff;
-
     border-radius:20px;
-
     padding:35px 25px;
-
     text-align:center;
-
     transition:.35s;
-
     border:1px solid #e8e8e8;
-
     box-shadow:0 10px 25px rgba(0,0,0,.06);
-
 }
 
 .service-card:hover{
-
     transform:translateY(-10px);
-
     border-color: #1e3e94;
-
     box-shadow:0 20px 35px rgba(0,0,0,.12);
-
 }
 
 .service-icon{
-
     width:80px;
-
     height:80px;
-
     margin:auto;
-
     background:#ebebff;
-
     color: #1e3e94;
-
     border-radius:50%;
-
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
     font-size:36px;
-
     margin-bottom:22px;
-
     transition:.3s;
-
 }
 
 .service-card:hover .service-icon{
-
     background: #1e3e94;
-
     color:#fff;
-
 }
 
 .service-card h3{
-
     font-size:22px;
-
     color:#0b2d59;
-
     margin-bottom:15px;
-
 }
 
 .service-card p{
-
     color:#666;
-
     line-height:28px;
-
     font-size:15px;
-
 }
 
 /* Responsive */
-
 @media(max-width:1100px){
-
 .service-grid{
-
 grid-template-columns:repeat(2,1fr);
-
 }
-
 }
 
 @media(max-width:768px){
-
 .service-grid{
-
 grid-template-columns:1fr;
-
 }
-
 }
-
-
 
 /*=========================================
         SUPPORT PROCESS
 =========================================*/
 
 .support-process{
-
     padding:90px 8%;
     background:#f8fbff;
-
 }
 
 .process-wrapper{
-
     display:flex;
     justify-content:space-between;
     gap:25px;
     margin-top:60px;
     position:relative;
-
 }
 
 /* Horizontal Line */
-
 .process-wrapper::before{
-
     content:"";
     position:absolute;
     top:45px;
@@ -5083,11 +4492,9 @@ grid-template-columns:1fr;
     height:4px;
     background:#d9e4f5;
     z-index:0;
-
 }
 
 .process-step{
-
     position:relative;
     flex:1;
     background:#fff;
@@ -5097,17 +4504,13 @@ grid-template-columns:1fr;
     box-shadow:0 10px 25px rgba(0,0,0,.08);
     z-index:1;
     transition:.35s;
-
 }
 
 .process-step:hover{
-
     transform:translateY(-8px);
-
 }
 
 .process-icon{
-
     width:90px;
     height:90px;
     margin:auto;
@@ -6581,8 +5984,8 @@ FINAL CTA
 }
 
 .btn-primary{
-    background:#041030;
-    color:#fff;
+    background:blue;
+    color:white;
     padding:16px 38px;
     border-radius:40px;
     text-decoration:none;
@@ -6790,7 +6193,7 @@ EXPLORE MORE BUTTON
 .services-btn{
     display:inline-block;
     padding:15px 40px;
-    background:#ff6b00;
+    background:darkblue;
     color:#fff;
     text-decoration:none;
     border-radius:50px;
@@ -7189,7 +6592,7 @@ PROJECT HIGHLIGHTS
 
 .highlight-card:hover{
     transform:translateY(-8px);
-    border-left:5px solid #ff6b00;
+    border-left:5px solid darkblue;
 }
 
 .highlight-card h3{
@@ -7200,7 +6603,7 @@ PROJECT HIGHLIGHTS
 
 .highlight-card p{
     color:#666;
-    line-height:30px;
+    line-height:30px;   
 }
 
 @media(max-width:992px){
@@ -8542,6 +7945,7 @@ grid-template-columns:1fr;
 }
 
 /* ================================================================================== */
+
 .footer {
     background: linear-gradient(135deg, #0f2347, #1e3e94);
     color: white;
@@ -8606,6 +8010,49 @@ grid-template-columns:1fr;
     font-size: 15px;
 }
 
+/* ===========================
+   FOOTER SOCIAL ICONS
+=========================== */
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.footer-social a {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 0 !important;
+    transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+    padding-left: 0 !important;
+    transform: translateY(-3px);
+}
+
+.footer-social a:nth-child(1) {
+    color: #1877F2;
+}
+
+.footer-social a:nth-child(2) {
+    color: #FF0000;
+}
+
+.footer-social a:nth-child(3) {
+    color: #E4405F;
+}
+
+.footer-social a:nth-child(4) {
+    color: #0A66C2;
+}
 
 
 
