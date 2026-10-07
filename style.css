@@ -1,11 +1,20 @@
+/* PAGE ZOOM */
 html{
     zoom:90%;
 }
 
-/* For Chrome & Edge */
+
+/* SELECTION TEXT COLOR */
+::selection {
+    background: rgb(49, 47, 153);
+    color: white;
+}
+
+
 body{
     min-width:1366px;
     overflow-x:auto;
+    background:#f8f9fc;
 }
 
 *{
@@ -15,9 +24,9 @@ body{
     font-family:Arial,sans-serif;
 }
 
-body{
+/* body{
     background:#f8f9fc;
-}
+} */
 
 .container{
     width:100%;
@@ -202,8 +211,8 @@ PAGE BANNER
 
 .banner-logo{
     position:absolute;
-    width:750px;        /* Increase or decrease as needed */
-    opacity:0.12;       /* Light watermark effect */
+    width:750px;        
+    opacity:0.12;       
     z-index:1;
     user-select:none;
     pointer-events:none;
@@ -693,6 +702,7 @@ body{
 }
 
 /* ============================================================================================= */
+
 .board-section {
     padding: 90px 10%;
     background: #f8fafc;
