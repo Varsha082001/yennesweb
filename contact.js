@@ -26,10 +26,6 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 });
 
 
-
-
-
-
 // OUR CLIENT JS
 function openTab(evt, tabName) {
     // Hide all tab contents
@@ -80,8 +76,6 @@ function closePopup(){
 }
  
 
-
-
 window.onclick=function(event){
     let popup=document.getElementById("popup");
     if(event.target==popup){
@@ -99,6 +93,7 @@ function closeImage(){
 }
 
 // Close when clicking outside the image
+
 document.getElementById("imagePopup").addEventListener("click",function(e){
     if(e.target.id==="imagePopup"){
         closeImage();
