@@ -4,867 +4,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | YENNES TDL</title>
+    <title>Sign In | YENNES TDL</title>
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-          rel="stylesheet">
-
-    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary: #1e3e94;
-            --blue: #0878ef;
-            --light-blue: #38bdf8;
-            --navy: #102c60;
-            --text: #183566;
-            --muted: #657fae;
-            --border: #d4e0f3;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            color: var(--text);
-            background: #f4f8ff;
-            min-height: 100vh;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        /* MAIN LAYOUT */
-        /* .login-page {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            min-height: calc(100vh - 70px);
-        } */
-
-        /* LEFT PANEL */
-        .brand-panel {
-            position: relative;
-            overflow: hidden;
-            padding: 45px 8%;
-            color: white;
-            background: linear-gradient(145deg, #10264f, #174ba6 75%, #0879ce);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .brand-panel::before {
-            content: "";
-            position: absolute;
-            width: 600px;
-            height: 600px;
-            border: 1px solid rgba(255,255,255,0.08);
-            border-radius: 50%;
-            right: -250px;
-            top: -200px;
-            box-shadow: 0 0 0 70px rgba(255,255,255,0.025),
-                        0 0 0 140px rgba(255,255,255,0.02);
-        }
-
-        .brand-content,
-        .brand-bottom {
-            position: relative;
-            z-index: 1;
-        }
-
-        .brand-logo {
-            font-size: clamp(30px, 3.2vw, 48px);
-            font-weight: 700;
-            letter-spacing: -1.5px;
-            margin-bottom: 3px;
-        }
-
-        .brand-logo span {
-            color: #38a7ff;
-        }
-
-        .brand-tagline {
-            font-size: 13px;
-            margin-left: 5px;
-            color: #e4efff;
-        }
-
-        .brand-message {
-            margin-top: 60px;
-        }
-
-        .brand-message h1 {
-            font-size: clamp(28px, 3vw, 40px);
-            line-height: 1.35;
-            margin-bottom: 18px;
-        }
-
-        .brand-message h1 span {
-            color: #31c9f5;
-        }
-
-        .brand-message p {
-            color: #e1ebff;
-            font-size: 15px;
-            line-height: 1.9;
-            max-width: 470px;
-        }
-
-        /* FEATURES */
-        .features {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 12px;
-            margin-top: 32px;
-        }
-
-        .feature {
-            text-align: center;
-            font-size: 12px;
-            line-height: 1.6;
-            padding: 0 5px;
-        }
-
-        .feature-icon {
-            width: 54px;
-            height: 54px;
-            border: 1px solid #2589ee;
-            background: rgba(255,255,255,0.05);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 21px;
-            margin: 0 auto 10px;
-        }
-
-        /* OPTIONAL PRODUCT IMAGE */
-        .product-image {
-            display: block;
-            width: 100%;
-            max-width: 520px;
-            max-height: 260px;
-            object-fit: contain;
-            margin: 30px auto 0;
-        }
-
-        /* RIGHT PANEL */
-        .form-panel {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 65px 8% 45px;
-            background: linear-gradient(145deg, #ffffff, #f0f7ff);
-        }
-
-        .back-home {
-            position: absolute;
-            right: 7%;
-            top: 30px;
-            color: var(--blue);
-            font-size: 13px;
-        }
-
-        .back-home i {
-            margin-right: 8px;
-        }
-
-        .login-heading {
-            text-align: center;
-            margin-bottom: 26px;
-        }
-
-        .user-icon {
-            width: 76px;
-            height: 76px;
-            background: #e4f1ff;
-            color: var(--blue);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 35px;
-            margin: 0 auto 16px;
-        }
-
-        .login-heading h2 {
-            color: var(--navy);
-            font-size: 32px;
-            margin-bottom: 5px;
-        }
-
-        .login-heading p {
-            color: var(--muted);
-            font-size: 14px;
-        }
-
-        /* FORM CARD */
-        .login-card {
-            width: 100%;
-            max-width: 500px;
-            padding: 28px 30px;
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            background: rgba(255,255,255,0.82);
-            box-shadow: 0 10px 35px rgba(30,62,148,0.04);
-        }
-
-        .form-group {
-            margin-bottom: 22px;
-        }
-
-        .form-group label {
-            display: block;
-            font-size: 14px;
-            font-weight: 500;
-            margin-bottom: 9px;
-            color: var(--navy);
-        }
-
-        .input-wrapper {
-            position: relative;
-        }
-
-        .input-wrapper > i {
-            position: absolute;
-            left: 16px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #365b9b;
-            font-size: 16px;
-        }
-
-        .input-wrapper input {
-            width: 100%;
-            height: 52px;
-            border: 1px solid #cfdbef;
-            border-radius: 9px;
-            padding: 0 45px;
-            outline: none;
-            font-family: inherit;
-            font-size: 13px;
-            color: var(--text);
-            background: white;
-            transition: border 0.2s, box-shadow 0.2s;
-        }
-
-        .input-wrapper input:focus {
-            border-color: var(--blue);
-            box-shadow: 0 0 0 3px rgba(8,120,239,0.1);
-        }
-
-        .input-wrapper input::placeholder {
-            color: #8a9fc2;
-        }
-
-        .toggle-password {
-            position: absolute;
-            right: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            border: none;
-            background: transparent;
-            color: #6b84ac;
-            cursor: pointer;
-            font-size: 15px;
-            padding: 5px;
-        }
-
-        /* REMEMBER / FORGOT */
-        .form-options {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 10px;
-            margin-top: -3px;
-            margin-bottom: 25px;
-            font-size: 12px;
-        }
-
-        .remember {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            cursor: pointer;
-        }
-
-        .remember input {
-            width: 16px;
-            height: 16px;
-            accent-color: var(--blue);
-        }
-
-        .forgot-link {
-            color: var(--blue);
-        }
-
-        .forgot-link:hover,
-        .contact-admin a:hover {
-            text-decoration: underline;
-        }
-
-        /* BUTTONS */
-        .login-btn {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 15px;
-            width: 100%;
-            height: 53px;
-            border: none;
-            border-radius: 9px;
-            background: linear-gradient(100deg, #1767dc, #1460d1);
-            color: white;
-            font-family: inherit;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .login-btn:hover {
-            background: #104ba9;
-            transform: translateY(-1px);
-        }
-
-        .divider {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            color: #879bbd;
-            font-size: 12px;
-            margin: 25px 0;
-        }
-
-        .divider::before,
-        .divider::after {
-            content: "";
-            flex: 1;
-            height: 1px;
-            background: var(--border);
-        }
-
-        .google-btn {
-            width: 65%;
-            min-width: 200px;
-            height: 48px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            background: white;
-            color: var(--text);
-            border: 1px solid #cfdbef;
-            border-radius: 9px;
-            font-family: inherit;
-            font-size: 13px;
-            cursor: pointer;
-            transition: 0.2s;
-        }
-
-        .google-btn:hover {
-            background: #f5f9ff;
-            border-color: #9bb9ed;
-        }
-
-        .google-btn i {
-            font-size: 19px;
-            color: #4285f4;
-        }
-
-        .contact-admin {
-            text-align: center;
-            margin-top: 35px;
-            font-size: 12px;
-        }
-
-        .contact-admin a {
-            color: var(--blue);
-            text-decoration: underline;
-            margin-left: 5px;
-        }
-
-        .message {
-            display: none;
-            padding: 12px;
-            margin-top: 16px;
-            border-radius: 7px;
-            font-size: 12px;
-            line-height: 1.6;
-        }
-
-        .message.show {
-            display: block;
-        }
-
-        .message.info {
-            color: #174b91;
-            background: #eaf3ff;
-        }
-
-        .message.error {
-            color: #a12626;
-            background: #fff0f0;
-        }
-
-        /* FOOTER */
-        .footer {
-            min-height: 70px;
-            padding: 18px 5.5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 18px;
-            flex-wrap: wrap;
-            background: linear-gradient(100deg, #10264f, #163b82);
-            color: white;
-            font-size: 12px;
-        }
-
-        .footer-social {
-            display: flex;
-            align-items: center;
-            gap: 22px;
-        }
-
-        .footer-social a {
-            color: white;
-            transition: 0.2s;
-        }
-
-        .footer-social a:hover {
-            color: #38bdf8;
-            transform: translateY(-2px);
-        }
-
-        .footer-social .privacy {
-            border-left: 1px solid rgba(255,255,255,0.4);
-            padding-left: 22px;
-        }
-
-        /* RESPONSIVE DESIGN */
-        @media (max-width: 900px) {
-            .login-page {
-                grid-template-columns: 0.85fr 1.15fr;
-            }
-
-            .brand-panel {
-                padding: 35px 7%;
-            }
-
-            .form-panel {
-                padding: 80px 5% 40px;
-            }
-
-            .brand-message {
-                margin-top: 40px;
-            }
-
-            .login-card {
-                padding: 25px 22px;
-            }
-
-            .features {
-                grid-template-columns: repeat(2, 1fr);
-                row-gap: 20px;
-            }
-        }
-
-        @media (max-width: 650px) {
-            .login-page {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .brand-panel {
-                padding: 28px 24px;
-            }
-
-            .brand-message {
-                margin-top: 30px;
-            }
-
-            .brand-message h1 {
-                font-size: 29px;
-            }
-
-            .brand-message p {
-                font-size: 13px;
-            }
-
-            .features {
-                grid-template-columns: repeat(4, 1fr);
-                gap: 5px;
-                margin-top: 25px;
-            }
-
-            .feature {
-                font-size: 10px;
-            }
-
-            .feature-icon {
-                width: 42px;
-                height: 42px;
-                font-size: 17px;
-            }
-
-            .product-image {
-                display: none;
-            }
-
-            .form-panel {
-                padding: 75px 20px 35px;
-            }
-
-            .back-home {
-                top: 25px;
-                right: 22px;
-            }
-
-            .login-heading h2 {
-                font-size: 27px;
-            }
-
-            .login-card {
-                padding: 23px 18px;
-            }
-
-            .footer {
-                justify-content: center;
-                text-align: center;
-            }
-
-            .footer-social {
-                justify-content: center;
-                gap: 17px;
-            }
-        }
-
-        @media (max-width: 360px) {
-            .form-options {
-                font-size: 11px;
-            }
-
-            .footer-social {
-                gap: 12px;
-            }
-        }
-    </style>
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
-<body>
+<body class="login-page">
 
-<main class="login-page">
+    <main class="login-container">
 
-    <!-- LEFT BRANDING PANEL -->
-    <!-- <section class="brand-panel">
+        <section class="login-card">
 
-        <div class="brand-content"> -->
-<!-- 
-            <a href="index.html" aria-label="YENNES TDL Home">
-                <div class="brand-logo">
+            <!-- LEFT WELCOME SECTION -->
+            <div class="welcome-section">
+
+                <a href="login.html" class="logo">
+                    <!-- <span class="logo-icon">Y</span> -->
+                    <!-- <span>YENNES </span> -->
+                     <div class="signup-logo">
+                     <a href="index.html">
+                         <!-- <img src="Images/YENNESLogo.jpg" alt="YENNES Infotec Logo"> -->
+                           </a>
+                    </div>
+                </a>
+
+                <div class="welcome-text">
+                    <span class="welcome-label">WELCOME BACK</span>
+
+                    <h1>Your Trusted<br>Tally Partner</h1>
+
+                    <p>
+                        Smart business solutions, Tally customization,
+                        Add-ons and dedicated support from YENNES Infotech.
+                    </p>
+
+                    <div class="welcome-divider"></div>
+
+                    <span class="welcome-caption">
+                        Trusted Tally Partner Since 1995
+                    </span>
+                </div>
+
+                <div class="shape shape-one"></div>
+                <div class="shape shape-two"></div>
+                <div class="shape shape-three"></div>
+
+            </div>
+
+            <!-- RIGHT LOGIN SECTION -->
+            <div class="login-section">
+
+                <div class="mobile-logo">
                     YENNES <span>TDL</span>
                 </div>
-                <p class="brand-tagline">
-                    Trusted Tally Partner with 30+ years of experience
-                </p>
-            </a>
 
-            <div class="brand-message">
-                <h1>
-                    Smarter Tally Solutions<br>
-                    for a <span>Better Tomorrow</span>
-                </h1>
-
-                <p>
-                    Access your account to manage projects, track updates,
-                    and get seamless support — all in one place.
-                </p>
-            </div>
-
-            <div class="features">
-
-                <div class="feature">
-                    <div class="feature-icon">
-                        <i class="fa-solid fa-shield-halved"></i>
+                <div class="login-heading">
+                    <div class="user-icon">
+                        <i class="fa-solid fa-user"></i>
                     </div>
-                    Secure<br>Access
+
+                    <h2>Sign in</h2>
+                    <p>Welcome! Please enter your account details.</p>
                 </div>
 
-                <div class="feature">
-                    <div class="feature-icon">
-                        <i class="fa-solid fa-bolt"></i>
+                <form id="loginForm">
+
+                    <label for="loginEmail">Email address</label>
+
+                    <div class="input-group">
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <input
+                            type="email"
+                            id="loginEmail"
+                            placeholder="Enter your email address"
+                            autocomplete="username"
+                            required>
                     </div>
-                    Fast &<br>Reliable
-                </div>
 
-                <div class="feature">
-                    <div class="feature-icon">
-                        <i class="fa-solid fa-headset"></i>
+                    <label for="loginPassword">Password</label>
+
+                    <div class="input-group">
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                            required>
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            id="togglePassword"
+                            aria-label="Show password">
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
                     </div>
-                    Dedicated<br>Support
-                </div>
 
-                <div class="feature">
-                    <div class="feature-icon">
-                        <i class="fa-solid fa-cloud"></i>
+                    <div class="login-options">
+
+                        <label class="remember-option">
+                            <input type="checkbox" id="rememberMe">
+                            <span>Remember me</span>
+                        </label>
+
+                        <a href="#" id="forgotPassword">
+                            Forgot password?
+                        </a>
+
                     </div>
-                    Tally<br>Solutions
-                </div>
 
-            </div>
-
-        </div> -->
-
-        <!-- OPTIONAL: ADD YOUR OWN TALLY / OFFICE IMAGE HERE -->
-        <!-- <img src="Images/YENNESLogo.jpg"
-             class="product-image"
-             alt="YENNES TDL solutions"> -->
-       
-
-         <!-- Logo -->
-   <!-- <div class="logo">
-    <a href="index.html">
-        <img src="Images/YENNESLogo.jpg" alt="YENNES">
-    </a> -->
-<!-- </div>
-
-    </section> -->
-
-
-    <!-- RIGHT LOGIN PANEL -->
-    <section class="form-panel">
-
-        <a href="index.html" class="back-home">
-            <i class="fa-solid fa-house"></i> Back to Home
-        </a>
-
-        <div class="login-heading">
-            <div class="user-icon">
-                <i class="fa-regular fa-user"></i>
-            </div>
-
-            <h2>Welcome Back</h2>
-            <p>Login to your YENNES account</p>
-        </div>
-
-
-        <form class="login-card" id="loginForm">
-
-            <!-- EMAIL -->
-            <div class="form-group">
-                <label for="email">Email Address</label>
-
-                <div class="input-wrapper">
-                    <i class="fa-regular fa-envelope"></i>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Enter your email address"
-                        autocomplete="username"
-                        required>
-                </div>
-            </div>
-
-
-            <!-- PASSWORD -->
-            <div class="form-group">
-                <label for="password">Password</label>
-
-                <div class="input-wrapper">
-                    <i class="fa-solid fa-lock"></i>
-
-                    <input
-                        type="password"
-                        id="password"
-                        name="password"
-                        placeholder="Enter your password"
-                        autocomplete="current-password"
-                        required
-                        minlength="6">
-
-                    <button
-                        type="button"
-                        class="toggle-password"
-                        id="togglePassword"
-                        aria-label="Show password"
-                        aria-pressed="false">
-                        <i class="fa-regular fa-eye-slash"></i>
+                    <button type="submit" class="sign-in-button" id="loginButton">
+                        Sign in
+                        <i class="fa-solid fa-arrow-right"></i>
                     </button>
+
+                    <p id="loginMessage" class="message"
+                       role="status" aria-live="polite"></p>
+
+                </form>
+
+                <div class="or-divider">
+                    <span>OR</span>
                 </div>
-            </div>
 
-
-            <!-- REMEMBER / FORGOT -->
-            <div class="form-options">
-
-                <label class="remember">
-                    <input type="checkbox" id="remember">
-                    Remember me
-                </label>
-
-                <a href="#" class="forgot-link" id="forgotLink">
-                    Forgot Password?
+                <a href="signup.html" class="create-account-button">
+                    <i class="fa-solid fa-user-plus"></i>
+                    Create an account
                 </a>
 
+                <p class="privacy-text">
+                    By continuing, you agree to our
+                    <a href="privacy-policy.html">Privacy Policy</a>.
+                </p>
+
             </div>
 
+        </section>
 
-            <!-- LOGIN BUTTON -->
-            <button type="submit" class="login-btn">
-                Login <i class="fa-solid fa-arrow-right"></i>
-            </button>
+        <footer class="login-footer">
+            © <span id="currentYear"></span> YENNES Infotech. All rights reserved.
+        </footer>
 
+    </main>
 
-            <div class="message" id="formMessage" role="status"
-                 aria-live="polite"></div>
-
-
-            <!-- SEPARATOR -->
-            <div class="divider">Or</div>
-
-
-            <!-- GOOGLE LOGIN -->
-            <button type="button" class="google-btn" id="googleLogin">
-                <i class="fa-brands fa-google"></i>
-                Login with Google
-            </button>
-
-
-            <!-- ADMIN CONTACT -->
-            <div class="contact-admin">
-                Don't have an account?
-                <a href="mailto:info@yennes.com?subject=YENNES%20TDL%20Account%20Request">
-                    Contact Admin
-                </a>
-            </div>
-
-        </form>
-
-    </section>
-
-</main>
-
-
-<!-- FOOTER -->
-<footer class="footer">
-
-    <p>© 2026 YENNES | All Rights Reserved</p>
-
-    <div class="footer-social">
-
-        <a href="https://www.facebook.com/"
-           aria-label="Facebook">
-            <i class="fa-brands fa-facebook-f"></i>
-        </a>
-
-        <a href="https://www.youtube.com/@yennesinfotec8885"
-           aria-label="YouTube">
-            <i class="fa-brands fa-youtube"></i>
-        </a>
-
-        <a href="https://www.instagram.com/yennes.infotec/"
-           aria-label="Instagram">
-            <i class="fa-brands fa-instagram"></i>
-        </a>
-
-        <a href="https://www.linkedin.com/company/yennes-infotec-p-limited/"
-           aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-
-        <a href="Privacypolicy.html" class="privacy">
-            Privacy Policy
-        </a>
-
-    </div>
-
-</footer>
-
-
-<script>
-    // SHOW / HIDE PASSWORD
-    const passwordInput = document.getElementById("password");
-    const togglePassword = document.getElementById("togglePassword");
-
-    togglePassword.addEventListener("click", function () {
-        const isHidden = passwordInput.type === "password";
-
-        passwordInput.type = isHidden ? "text" : "password";
-
-        this.innerHTML = isHidden
-            ? '<i class="fa-regular fa-eye"></i>'
-            : '<i class="fa-regular fa-eye-slash"></i>';
-
-        this.setAttribute("aria-label",
-            isHidden ? "Hide password" : "Show password");
-
-        this.setAttribute("aria-pressed", String(isHidden));
-    });
-
-
-    // DISPLAY MESSAGES
-    const loginForm = document.getElementById("loginForm");
-    const formMessage = document.getElementById("formMessage");
-
-    function showMessage(message, type = "info") {
-        formMessage.textContent = message;
-        formMessage.className = "message show " + type;
-    }
-
-
-    // FRONT-END DEMO ONLY — NOT REAL AUTHENTICATION
-    loginForm.addEventListener("submit", function (event) {
-        event.preventDefault();
-
-        if (!loginForm.reportValidity()) {
-            return;
-        }
-
-        showMessage(
-            "Login form validated. Connect a secure authentication service to sign in.",
-            "info"
-        );
-    });
-
-
-    // FORGOT PASSWORD DEMO
-    document.getElementById("forgotLink").addEventListener("click",
-        function (event) {
-            event.preventDefault();
-
-            showMessage(
-                "For password assistance, contact your YENNES TDL administrator.",
-                "info"
-            );
-        }
-    );
-
-
-    // GOOGLE LOGIN DEMO
-    document.getElementById("googleLogin").addEventListener("click",
-        function () {
-            showMessage(
-                "Google sign-in is not configured yet. Set up Google OAuth to enable it.",
-                "info"
-            );
-        }
-    );
+    <script>
+    document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
 </script>
+
+<script type="module" src="auth.js"></script>
 
 </body>
 </html>

@@ -25,14 +25,14 @@
     
 
     <li class="dropdown">
-    <a href="index.html">About us ▼</a>
+    <a href="index.html">About us </a>
 
-    <ul class="dropdown-menu">
+    <!-- <ul class="dropdown-menu">
         <li><a href="company.html">Our Company</a></li>
         <li><a href="branches.html">Tally Partner in Chennai</a></li>
         <li><a href="boardmembers.html">Board Members</a></li>
         <li><a href="Achievements.html">Our Achievements</a></li>
-    </ul>
+    </ul> -->
 </li>
 
 <!-- 
@@ -84,12 +84,8 @@
 
 </ul>
 
-    <!-- <a href="requestdemo.html" class="demo-btn">
-        Request Demo
-    </a> -->
-
-    
-<div class="auth-buttons">
+   
+<!-- <div class="auth-buttons">
     <a href="login.html" class="login-btn">
         <i class="fa-solid fa-right-to-bracket"></i> Login
     </a>
@@ -97,7 +93,70 @@
     <a href="signup.html" class="signup-btn">
         <i class="fa-solid fa-user-plus"></i> Sign Up
     </a>
+</div> -->
+
+
+<!-- TOP-RIGHT USER ACCOUNT MENU -->
+<div class="user-account" id="userAccount">
+
+    <button class="account-trigger"
+            id="accountTrigger"
+            type="button"
+            aria-expanded="false"
+            aria-controls="accountDropdown">
+
+        <span class="account-avatar">
+            <i class="fa-solid fa-user"></i>
+        </span>
+
+        <span class="account-name" id="navUserName">Account</span>
+
+        <i class="fa-solid fa-chevron-down account-arrow"></i>
+    </button>
+
+    <div class="account-dropdown" id="accountDropdown" hidden>
+
+        <div class="account-info">
+            <span class="account-avatar large">
+                <i class="fa-solid fa-user"></i>
+            </span>
+
+            <div class="account-details">
+                <strong id="dropdownUserName">Loading...</strong>
+                <span id="dropdownUserEmail"></span>
+            </div>
+        </div>
+
+        <div class="dropdown-divider"></div>
+
+        <a href="profile.html" class="dropdown-item">
+            <i class="fa-regular fa-user"></i>
+            My Profile
+        </a>
+
+        <a href="changepassword.html" class="dropdown-item">
+            <i class="fa-solid fa-lock"></i>
+            Change Password
+        </a>
+
+        <div class="dropdown-divider"></div>
+
+        <a href="contact.html" class="dropdown-item">
+            <i class="fa-solid fa-headset"></i>
+            Help &amp; Support
+        </a>
+
+        <button type="button"
+                class="dropdown-item logout-item"
+                id="logoutButton">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Sign Out
+        </button>
+
+        <p id="accountMessage" class="account-message"></p>
+    </div>
 </div>
+
 
 </nav>
 
@@ -113,11 +172,7 @@
             <span>About Us</span>
         </p>
     </div>
-
 </section>
-
-
-
 
 <section class="about-highlight">
     <div class="about-left">
@@ -371,5 +426,7 @@
             © 2025 YENNES TDL | All Rights Reserved
         </p>
     </div>
+    <script type="module" src="account-menu.js"></script>
+    <!-- <script src="theme.js"></script> -->
 </body>
 </html>

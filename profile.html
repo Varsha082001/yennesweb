@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | YENNES TDL</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="account-page">
+
+<header class="account-header">
+    <a href="index.html" class="account-brand">
+        <!-- <span class="brand-icon">Y</span>
+        <span>YENNES <small>TDL</small></span> -->
+        <img src="Images/YENNESLogo.jpg" alt="">
+    </a>
+
+    <nav class="profile-header-actions">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <button type="button" id="logoutButton" class="profile-logout">
+            <i class="fa-solid fa-right-from-bracket"></i> Sign out
+        </button>
+    </nav>
+</header>
+
+<main class="profile-main">
+
+    <!-- PAGE TITLE -->
+    <section class="profile-welcome">
+        <div>
+            <span class="eyebrow">MY ACCOUNT</span>
+            <h1>My Profile</h1>
+            <p>Manage your personal information and account security.</p>
+        </div>
+
+        <a href="index.html" class="profile-home-button">
+            <i class="fa-solid fa-arrow-left"></i> Back to Website
+        </a>
+    </section>
+
+    <!-- PROFILE BANNER -->
+    <section class="expanded-profile-banner">
+        <div class="expanded-avatar" id="profileAvatar">Y</div>
+
+        <div class="expanded-profile-info">
+            <span class="profile-welcome-label">WELCOME TO YENNES </span>
+            <h2 id="profileName">Loading profile...</h2>
+            <p id="profileEmail">Loading email...</p>
+            <span class="profile-status">
+                <span class="status-dot"></span> Account signed in
+            </span>
+        </div>
+
+        <a href="changepassword.html" class="banner-security-link">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Account Security</span>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+    </section>
+
+    <!-- PROFILE GRID -->
+    <div class="profile-dashboard-grid">
+
+        <!-- PERSONAL INFORMATION -->
+        <section class="profile-panel profile-personal-panel">
+            <div class="profile-panel-heading">
+                <div class="panel-icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div>
+                    <h2>Personal Information</h2>
+                    <p>Your account details</p>
+                </div>
+            </div>
+
+            <div class="profile-detail-row">
+                <div>
+                    <label>Full Name</label>
+                    <p id="detailName">Loading...</p>
+                </div>
+                <i class="fa-regular fa-user detail-row-icon"></i>
+            </div>
+
+            <div class="profile-detail-row">
+                <div>
+                    <label>Email Address</label>
+                    <p id="detailEmail">Loading...</p>
+                </div>
+                <i class="fa-regular fa-envelope detail-row-icon"></i>
+            </div>
+
+            <div class="profile-detail-row">
+                <div>
+                    <label>Email Verification</label>
+                    <p id="emailVerification">Checking status...</p>
+                </div>
+                <i class="fa-solid fa-circle-check detail-row-icon"></i>
+            </div>
+
+            <div class="profile-detail-row">
+                <div>
+                    <label>Account Created</label>
+                    <p id="accountCreated">Not available</p>
+                </div>
+                <i class="fa-regular fa-calendar detail-row-icon"></i>
+            </div>
+
+            <p class="profile-note">
+                <i class="fa-solid fa-circle-info"></i>
+                Your name and email are linked to your sign-in account.
+            </p>
+        </section>
+
+        <!-- SECURITY -->
+        <section class="profile-panel">
+            <div class="profile-panel-heading">
+                <div class="panel-icon security-panel-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div>
+                    <h2>Security Settings</h2>
+                    <p>Protect your account</p>
+                </div>
+            </div>
+
+            <div class="security-feature">
+                <div class="security-feature-icon">
+                    <i class="fa-solid fa-key"></i>
+                </div>
+                <div class="security-feature-text">
+                    <h3>Password</h3>
+                    <p>Update your account password.</p>
+                </div>
+            </div>
+
+            <a href="changepassword.html"
+               class="profile-action-link">
+                Change Password
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <div class="security-feature">
+                <div class="security-feature-icon">
+                    <i class="fa-solid fa-envelope-circle-check"></i>
+                </div>
+                <div class="security-feature-text">
+                    <h3>Email verification</h3>
+                    <p id="verificationDescription">
+                        Checking your email verification status.
+                    </p>
+                </div>
+            </div>
+
+            <button type="button" id="verifyEmailButton"
+                    class="profile-action-link profile-action-button">
+                Send Verification Email
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <p id="profileMessage" class="account-feedback"
+               role="status" aria-live="polite"></p>
+        </section>
+
+        <!-- ACCOUNT OVERVIEW -->
+        <section class="profile-panel">
+            <div class="profile-panel-heading">
+                <div class="panel-icon overview-panel-icon">
+                    <i class="fa-solid fa-chart-pie"></i>
+                </div>
+                <div>
+                    <h2>Account Overview</h2>
+                    <p>Your YENNES account</p>
+                </div>
+            </div>
+
+            <div class="overview-item">
+                <span class="overview-item-icon">
+                    <i class="fa-solid fa-user-check"></i>
+                </span>
+                <div>
+                    <p>Account Status</p>
+                    <strong>Signed In</strong>
+                </div>
+            </div>
+
+            <div class="overview-item">
+                <span class="overview-item-icon">
+                    <i class="fa-solid fa-fingerprint"></i>
+                </span>
+                <div>
+                    <p>Authentication Provider</p>
+                    <strong id="authProvider">Loading...</strong>
+                </div>
+            </div>
+
+            <div class="overview-item">
+                <span class="overview-item-icon">
+                    <i class="fa-solid fa-id-card"></i>
+                </span>
+                <div class="overview-provider-text">
+                    <p>Account ID</p>
+                    <strong id="accountId">Loading...</strong>
+                </div>
+                <button type="button" id="copyAccountId"
+                        class="copy-id-button" title="Copy account ID"
+                        aria-label="Copy account ID">
+                    <i class="fa-regular fa-copy"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- QUICK LINKS -->
+        <section class="profile-panel">
+            <div class="profile-panel-heading">
+                <div class="panel-icon links-panel-icon">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+                <div>
+                    <h2>Quick Links</h2>
+                    <p>Navigate your website</p>
+                </div>
+            </div>
+
+            <a href="index.html" class="quick-link-item">
+                <span class="quick-link-icon">
+                    <i class="fa-solid fa-house"></i>
+                </span>
+                <span>
+                    <strong>Home Page</strong>
+                    <small>Explore the YENNES website</small>
+                </span>
+                <i class="fa-solid fa-chevron-right quick-link-arrow"></i>
+            </a>
+
+            <a href="service.html" class="quick-link-item">
+                <span class="quick-link-icon">
+                    <i class="fa-solid fa-gears"></i>
+                </span>
+                <span>
+                    <strong>Our Services</strong>
+                    <small>Discover Tally and TDL solutions</small>
+                </span>
+                <i class="fa-solid fa-chevron-right quick-link-arrow"></i>
+            </a>
+
+            <a href="contact.html" class="quick-link-item">
+                <span class="quick-link-icon">
+                    <i class="fa-solid fa-headset"></i>
+                </span>
+                <span>
+                    <strong>Contact Us</strong>
+                    <small>Connect with our team</small>
+                </span>
+                <i class="fa-solid fa-chevron-right quick-link-arrow"></i>
+            </a>
+
+            <a href="privacypolicy.html" class="quick-link-item">
+                <span class="quick-link-icon">
+                    <i class="fa-solid fa-file-shield"></i>
+                </span>
+                <span>
+                    <strong>Privacy Policy</strong>
+                    <small>Review our privacy information</small>
+                </span>
+                <i class="fa-solid fa-chevron-right quick-link-arrow"></i>
+            </a>
+        </section>
+
+        <!-- ACCOUNT PREFERENCES -->
+        <section class="profile-panel preferences-panel">
+            <div class="profile-panel-heading">
+                <div class="panel-icon preferences-panel-icon">
+                    <i class="fa-solid fa-sliders"></i>
+                </div>
+                <div>
+                    <h2>Account Preferences</h2>
+                    <p>Choose how the website looks</p>
+                </div>
+            </div>
+
+            <div class="preference-row">
+                <div class="preference-description">
+                    <span class="preference-icon">
+                        <i class="fa-solid fa-moon"></i>
+                    </span>
+                    <div>
+                        <strong>Dark appearance</strong>
+                        <p>Switch between light and dark mode.</p>
+                    </div>
+                </div>
+
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="switch-slider"></span>
+                </label>
+            </div>
+
+            <p class="profile-note">
+                <i class="fa-solid fa-circle-info"></i>
+                Appearance preference is saved in this browser.
+            </p>
+        </section>
+
+        <!-- SIGN OUT -->
+        <section class="profile-signout-panel">
+            <div class="signout-icon">
+                <i class="fa-solid fa-right-from-bracket"></i>
+            </div>
+
+            <div class="signout-copy">
+                <h2>Sign out of your account</h2>
+                <p>Finish your session on this device.</p>
+            </div>
+
+            <button type="button" id="logoutButtonBottom"
+                    class="signout-button">
+                Sign Out
+            </button>
+        </section>
+
+    </div>
+</main>
+
+<footer class="account-footer">
+    © <span id="currentYear"></span> YENNES Infotech. All rights reserved.
+</footer>
+
+<script>
+    document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+</script>
+
+<script type="module" src="profile.js"></script>
+</body>
+</html>
