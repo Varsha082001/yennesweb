@@ -1,11 +1,11 @@
 emailjs.init({
-    publicKey: "VfYYxHS3n2o_GWKDv"
+    publicKey: "_erykYYxDeayGi0Wb"
 });
 document.getElementById("contactForm").addEventListener("submit", function (e) {
     e.preventDefault();
     emailjs.send(
         "service_29qhw9b",
-        "template_48rs9rf",
+        "template_gkvpyok",
         {
             from_name: document.getElementById("name").value,
             from_email: document.getElementById("email").value,
@@ -28,6 +28,8 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 
 // OUR CLIENT JS
 function openTab(evt, tabName) {
+
+
     // Hide all tab contents
     var tabContents = document.getElementsByClassName("tab-content");
     for (var i = 0; i < tabContents.length; i++) {
@@ -35,11 +37,15 @@ function openTab(evt, tabName) {
         tabContents[i].classList.remove("active");
     }
 
+
+
     // Remove active class from all buttons
     var tabButtons = document.getElementsByClassName("tab-btn");
     for (var i = 0; i < tabButtons.length; i++) {
         tabButtons[i].classList.remove("active");
     }
+
+
 
     // Show selected tab
     var selected = document.getElementById(tabName);
@@ -48,6 +54,8 @@ function openTab(evt, tabName) {
         selected.style.display = "block";
         selected.classList.add("active");
     }
+
+
     // Highlight selected button
     evt.currentTarget.classList.add("active");
 }
@@ -60,6 +68,8 @@ window.onload = function () {
         tabContents[i].style.display = "none";
         tabContents[i].classList.remove("active");
     }
+
+
     // Default tab
     document.getElementById("club").style.display = "block";
     document.getElementById("club").classList.add("active");
@@ -92,8 +102,9 @@ function closeImage(){
     document.getElementById("imagePopup").style.display="none";
 }
 
-// Close when clicking outside the image
 
+
+// Close when clicking outside the image
 document.getElementById("imagePopup").addEventListener("click",function(e){
     if(e.target.id==="imagePopup"){
         closeImage();

@@ -1,5 +1,5 @@
 emailjs.init({
-    publicKey: "VfYYxHS3n2o_GWKDv"
+    publicKey: "_erykYYxDeayGi0Wb"
 });
 
 const form = document.getElementById("demoForm");
@@ -20,7 +20,7 @@ form.addEventListener("submit", function(e){
     };
 
     emailjs.send(
-       "service_ifz9maq",
+       "service_29qhw9b",
         "template_i65ch3l",
         params
     )

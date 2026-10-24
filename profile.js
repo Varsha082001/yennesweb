@@ -128,6 +128,9 @@ byId("copyAccountId")?.addEventListener("click", async () => {
     }
 });
 
+
+
+
 /* Browser-only appearance preference */
 const darkToggle = byId("darkModeToggle");
 

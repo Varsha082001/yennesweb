@@ -18,6 +18,8 @@ function message(id, text, success = false) {
   element.style.color = success ? "#15803d" : "#dc2626";
 }
 
+
+
 // LOGIN: use your previously registered account
 $("loginForm")?.addEventListener("submit", async (event) => {
   event.preventDefault();
@@ -49,6 +51,9 @@ $("loginForm")?.addEventListener("submit", async (event) => {
     button.disabled = false;
   }
 });
+
+
+
 
 // SIGNUP
 $("signupForm")?.addEventListener("submit", async (event) => {
@@ -98,6 +103,9 @@ $("signupForm")?.addEventListener("submit", async (event) => {
   }
 });
 
+
+
+
 // PASSWORD VISIBILITY
 document.querySelectorAll(".password-toggle").forEach((button) => {
   button.addEventListener("click", () => {
@@ -110,6 +118,10 @@ document.querySelectorAll(".password-toggle").forEach((button) => {
     input.type = input.type === "password" ? "text" : "password";
   });
 });
+
+
+
+
 
 // FORGOT PASSWORD
 $("forgotPassword")?.addEventListener("click", async (event) => {
@@ -131,6 +143,10 @@ $("forgotPassword")?.addEventListener("click", async (event) => {
     message("loginMessage", "Could not send reset email. Check your email and Firebase settings.");
   }
 });
+
+
+
+
 
 // Redirect already-signed-in users away from login/signup
 onAuthStateChanged(auth, (user) => {
